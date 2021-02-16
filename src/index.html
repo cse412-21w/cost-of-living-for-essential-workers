@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>CSE 412 Project Demo</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <!-- For using d3 -->
+        <script src="https://d3js.org/d3.v6.min.js"></script>
+        <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+        <!-- For using vega-lite -->
+        <script src="https://cdn.jsdelivr.net/npm/vega"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vega-lite"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vega-lite-api"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vega-tooltip"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,900;1,400;1,900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+      <section class="title">
+        <a href="/">CSE 412 Demo</a>
+      </section>
+      <section>
+        <h2>Final Project</h2>
+        <p>The final project will provide hands-on experience designing, implementing, 
+          and deploying interactive visualizations. Your project should address a concrete
+          visualization challenge and should propose a novel, creative solution. The final
+          deliverable will take the form of a visual analysis tool or an explanatory narrative,
+          deployed as an interactive web page. More info on the
+          <a href='https://courses.cs.washington.edu/courses/cse412/21wi/fp.html'>course website</a>.
+        </p>
+      </section>
+      <section>
+        <p><strong>This page is used mainly to demo how to embed visualizations. All visualizations below are
+          not perfect and need more iteration critiques before really publishing on a webpage.
+        </strong></p>
+      </section>
+
+      
+      <section id = "tableauDemo"> 
+        <h3>Embed a Tableau Visualization:</h3>
+        <div class='tableauPlaceholder' id='viz1612344209794' style='position: relative'>
+          <noscript>
+            <a href='#'>
+              <img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;41&#47;412demo&#47;Sheet1&#47;1_rss.png' style='border: none' />
+            </a>
+          </noscript>
+          <object class='tableauViz'  style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+            <param name='embed_code_version' value='3' />
+            <param name='site_root' value='' />
+            <param name='name' value='412demo&#47;Sheet1' />
+            <param name='tabs' value='no' />
+            <param name='toolbar' value='yes' />
+            <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;41&#47;412demo&#47;Sheet1&#47;1.png' />
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en' />
+          </object>
+        </div>
+        <script type='text/javascript'>
+        var divElement = document.getElementById('viz1612344209794');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        vizElement.style.width='85%';
+        vizElement.style.height=(divElement.offsetWidth*0.4)+'px';
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script>
+      </section>
+    
+      <section id = "vegaDemo">
+        <h3>Embed a Vega-Lite Visualization:</h3>
+        <div id="view"></div>
+      </section>
+    
+      <section id = "d3Demo">
+        <h3>Embed a D3 Visualization:</h3>
+        <div id="d3-demo"></div>
+      </section>
+
+      <div class="footer">
+        <a href="https://courses.cs.washington.edu/courses/cse412/21wi/">CSE 412 Data Visualization</a>
+        <a href="http://www.washington.edu">University of Washington</a>
+      </div>
+
+      <!-- it is recommended to put js files before </body> -->
+      <!-- or check load event fot addEventListener() if you want to put js in the <head> -->
+      <script src="d3Demo.js"></script>
+      <script src="vegaDemo.js"></script>
+    </body>
+
+</html>
