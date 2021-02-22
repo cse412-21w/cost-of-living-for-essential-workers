@@ -117,65 +117,66 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"../static/sunshine.csv":[function(require,module,exports) {
-module.exports = "/sunshine.5e299277.csv";
-},{}],"vegaDemo.js":[function(require,module,exports) {
+})({"../static/income_per_hour_by_county.csv":[function(require,module,exports) {
+module.exports = "/income_per_hour_by_county.0a2fdeba.csv";
+},{}],"../static/income_per_hour_by_state.csv":[function(require,module,exports) {
+module.exports = "/income_per_hour_by_state.b0c5f2ab.csv";
+},{}],"nationalview.js":[function(require,module,exports) {
 "use strict";
 
-var _sunshine = _interopRequireDefault(require("../static/sunshine.csv"));
+var _income_per_hour_by_county = _interopRequireDefault(require("../static/income_per_hour_by_county.csv"));
+
+var _income_per_hour_by_state = _interopRequireDefault(require("../static/income_per_hour_by_state.csv"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-// import dataset
-"use strict"; // the code should be executed in "strict mode".
-// With strict mode, you can not, for example, use undeclared variables
+"use strict";
 
+var countydata = [];
+var statedata = []; //var yearrange = ['2016','2017','2018','2019'];
 
-var sunshineArray = []; // used to store data later
-
-var citySet = [];
 var options = {
-  config: {// Vega-Lite default configuration
-  },
+  config: {},
   init: function init(view) {
-    // initialize tooltip handler
     view.tooltip(new vegaTooltip.Handler().call);
   },
   view: {
-    // view constructor options
-    // remove the loader if you don't want to default to vega-datasets!
-    //   loader: vega.loader({
-    //     baseURL: "",
-    //   }),
     renderer: "canvas"
   }
-};
-vl.register(vega, vegaLite, options); // Again, We use d3.csv() to process data
+}; //const selectYear = vl.selectSingle('Select') // name the selection 'Select'
+//.fields('Year')          // limit selection to the Major_Genre field
+//.init('2016') // use first genre entry as initial value
+//.bind(vl.menu(yearrange));
 
-d3.csv(_sunshine.default).then(function (data) {
-  data.forEach(function (d) {
-    sunshineArray.push(d);
-
-    if (!citySet.includes(d.city)) {
-      citySet.push(d.city);
-    }
+vl.register(vega, vegaLite, options);
+d3.csv(_income_per_hour_by_county.default).then(function (data2) {
+  data2.forEach(function (d) {
+    countydata.push(d);
   });
-  drawBarVegaLite();
+  d3.csv(_income_per_hour_by_state.default).then(function (data3) {
+    data3.forEach(function (e) {
+      statedata.push(e);
+    });
+    drawAnnualIncomeCounty('2019');
+  });
 });
 
-function drawBarVegaLite() {
-  // var sunshine = add_data(vl, sunshine.csv, format_type = NULL);
-  // your visualization goes here
-  vl.markBar({
-    filled: true,
-    color: 'teal'
-  }).data(sunshineArray).encode(vl.x().fieldN('month').sort('none'), vl.y().fieldQ('sunshine'), vl.tooltip(['sunshine'])).width(450).height(450).render().then(function (viewElement) {
-    // render returns a promise to a DOM element containing the chart
-    // viewElement.value contains the Vega View object instance
-    document.getElementById('view').appendChild(viewElement);
+function drawAnnualIncomeCounty(year) {
+  vl.markGeoshape({
+    stroke: '#aaa',
+    strokeWidth: 0.25
+  }).data(vl.topojson("https://cdn.jsdelivr.net/npm/vega-datasets@1.31.1/data/us-10m.json").feature('counties')).transform(vl.lookup('id').from(vl.data(countydata).key('GeoFips').fields(['GeoName', year]))).encode(vl.color().fieldQ(year).scale({
+    domain: [0, 100],
+    scheme: 'lighttealblue'
+  }), vl.tooltip(['GeoName', year])).project(vl.projection('albersUsa')).width(890).height(500).config({
+    view: {
+      stroke: null
+    }
+  }).render().then(function (viewElement) {
+    document.getElementById('nv').appendChild(viewElement);
   });
 }
-},{"../static/sunshine.csv":"../static/sunshine.csv"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"../static/income_per_hour_by_county.csv":"../static/income_per_hour_by_county.csv","../static/income_per_hour_by_state.csv":"../static/income_per_hour_by_state.csv"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -379,5 +380,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","vegaDemo.js"], null)
-//# sourceMappingURL=/vegaDemo.ea1a58a6.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","nationalview.js"], null)
+//# sourceMappingURL=/nationalview.35cbe456.js.map
