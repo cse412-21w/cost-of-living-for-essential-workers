@@ -1,4 +1,5 @@
 # Final Project Demo
+https://cse412-21w.github.io/cost-of-living-for-essential-workers/
 ## Team Members
 Full name: Ellen Zhu
 Uw email: czhu22@uw.edu
