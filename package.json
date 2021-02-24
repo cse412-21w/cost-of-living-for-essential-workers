@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cse412/project-demo.git"
+    "url": "git+https://github.com/cse412-21w/cost-of-living-for-essential-workers.git"
   },
   "author": "cse412-staff",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/cse412/project-demo/issues"
+    "url": "https://github.com/cse412-21w/cost-of-living-for-essential-workers/issues"
   },
-  "homepage": "https://github.com/cse412/project-demo#readme",
+  "homepage": "https://github.com/cse412-21w/cost-of-living-for-essential-workers#readme",
   "devDependencies": {
     "cssnano": "^4.1.10",
     "parcel-bundler": "^1.12.4",
