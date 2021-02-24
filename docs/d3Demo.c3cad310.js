@@ -118,7 +118,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"ZQwg":[function(require,module,exports) {
-module.exports = "https://cse412.github.io/project-demo/sunshine.45a98b78.csv";
+module.exports = "https://cse412-21w.github.io/cost-of-living-for-essential-workers/sunshine.45a98b78.csv";
 },{}],"uEQA":[function(require,module,exports) {
 "use strict";
 
@@ -209,4 +209,4 @@ function drawLineD3() {
   }).style("font-size", "15px").attr("alignment-baseline", "middle");
 }
 },{"../static/sunshine.csv":"ZQwg"}]},{},["uEQA"], null)
-//# sourceMappingURL=https://cse412.github.io/project-demo/d3Demo.c3cad310.js.map
+//# sourceMappingURL=https://cse412-21w.github.io/cost-of-living-for-essential-workers/d3Demo.c3cad310.js.map

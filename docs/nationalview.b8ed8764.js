@@ -118,9 +118,9 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"nugb":[function(require,module,exports) {
-module.exports = "https://cse412.github.io/project-demo/income_per_hour_by_county.43b4dfaf.csv";
+module.exports = "https://cse412-21w.github.io/cost-of-living-for-essential-workers/income_per_hour_by_county.43b4dfaf.csv";
 },{}],"rkNJ":[function(require,module,exports) {
-module.exports = "https://cse412.github.io/project-demo/income_per_hour_by_state.16229637.csv";
+module.exports = "https://cse412-21w.github.io/cost-of-living-for-essential-workers/income_per_hour_by_state.16229637.csv";
 },{}],"uC0e":[function(require,module,exports) {
 "use strict";
 
@@ -177,4 +177,4 @@ function drawAnnualIncomeCounty(year) {
   });
 }
 },{"../static/income_per_hour_by_county.csv":"nugb","../static/income_per_hour_by_state.csv":"rkNJ"}]},{},["uC0e"], null)
-//# sourceMappingURL=https://cse412.github.io/project-demo/nationalview.b8ed8764.js.map
+//# sourceMappingURL=https://cse412-21w.github.io/cost-of-living-for-essential-workers/nationalview.b8ed8764.js.map
