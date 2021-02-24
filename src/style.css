@@ -9,7 +9,7 @@ body {
   max-width: 1200px;
   font-family: "Avenir", "Avenir Next", Helvetica Neue, Arial;
   font-size: 0.95em;
-  background-color: #111;
+  background-color: white;
 }
 
 a, a:visited {
@@ -129,7 +129,7 @@ p {
 #main {
   transition: margin-left .5s;
   padding: 16px;
-  color: white;
+  color: black;
 }
 
 /* top bar */
@@ -137,7 +137,7 @@ p {
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
-  background-color: #111;
+  background-color: white;
   padding: 20px;
 }
 
