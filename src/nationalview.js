@@ -56,11 +56,12 @@ function drawAnnualIncomeCounty() {
         .data(vl.topojson("https://cdn.jsdelivr.net/npm/vega-datasets@1.31.1/data/us-10m.json").mesh('states'));
   const trend = vl.markPoint()
                   .data(countydata2)
-                  //.select(sel)
+                  .select(sel)
                   .encode(
                     vl.x().fieldO('Year'),
                     vl.y().average('Income'),
-                    //vl.opacity().if(sel,vl.value(1)).value(0),
+                    vl.color().fieldQ('Income').scale({domain: [0, 80],scheme: 'tealblues'}),
+                    vl.opacity().if(sel,vl.value(1)).value(0),
                     vl.tooltip('Income')
                   )
   return vl.hconcat(vl.layer(map,states).project(vl.projection('albersUsa')).width(800).height(400),trend)
