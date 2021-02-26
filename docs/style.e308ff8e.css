@@ -6,7 +6,7 @@
 body {
   margin: 0 auto 0 auto;
   padding: 0;
-  max-width: 1200px;
+  width: 80%;
   font-family: "Avenir", "Avenir Next", Helvetica Neue, Arial;
   font-size: 0.95em;
   background-color: white;
@@ -23,7 +23,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5 {
-  color: #a47bf0;
+  color: #662ad5;
   background-color: inherit;
   font-weight: normal;
   padding: 0 0 5px 0;
@@ -59,7 +59,8 @@ h5 {
 }
 
 p {
-  margin: 0 0 10px 0;
+  margin: 0 0 20px 0;
+  font-size: 20px
 }
 
 .content {
@@ -69,7 +70,7 @@ p {
 }
 
 .title, .title h1, .title a {
-  color: #a47bf0;
+  color: #632dc9;
   font-size: 24pt;
   margin-bottom: 20px;
   margin-top: 5px;
@@ -146,6 +147,23 @@ p {
   font-size: 1.3em;
 }
 
+/* page layout*/
+#story, #nationalview, #annualWage, #costOfLivingIndex, #aboutUs {
+  margin-top: 200px;
+}
+
+#overview {
+  margin-top: 100px;
+}
+
+ul, ol {
+  font-size: 20px;
+}
+
+li {
+  margin-left: 25px;
+  margin-bottom: 20px;
+}
 
 
 /*# sourceMappingURL=/style.e308ff8e.css.map */

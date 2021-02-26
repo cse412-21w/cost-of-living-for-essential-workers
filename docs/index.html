@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>CSE 412 Project Demo</title>
-  <link rel="stylesheet" href="https://cse412-21w.github.io/cost-of-living-for-essential-workers/style.ce19373a.css">
+  <link rel="stylesheet" href="https://cse412-21w.github.io/cost-of-living-for-essential-workers/style.88c86aae.css">
   <script>// nav bar behavior
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
@@ -31,22 +31,23 @@ function closeNav() {
 
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="#">The Story</a>
-    <a href="#">US National Data</a>
-    <a href="#">Median Wages</a>
-    <a href="#">Different Careers</a>
-    <a href="#">Cost Of Living</a>
-    <a href="#">Design Rationale</a>
+    <a href="#">Intro</a>
+    <a href="#">National Hourly Wage</a>
+    <a href="#">Major Cities Annual Income</a>
+    <a href="#">Income By Occupation</a>
+    <a href="#">Cost of Living</a>
+    <a href="#">About Us</a>
   </div>
 
   <main class="main" id="main">
 
-    <section class="title">
+    <section class="title" id="title">
       <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
-      <a href="/">Cost Of Living For Essential Workers</a>
+      <a href="https://github.com/cse412-21w/cost-of-living-for-essential-workers">Cost Of Living For Essential
+        Workers</a>
     </section>
-    <section>
-      <h2>Final Project</h2>
+    <section id="overview">
+      <h1>Final Project</h1>
       <p>
         As the pandemic has shown, many workers essential to the functioning of cities are also some
         of our lowest paid. This interactive visualization design project intends to demonstrate how
@@ -55,32 +56,39 @@ function closeNav() {
       </p>
     </section>
 
-  <section id="story">
+    <section id="story">
+      <h1>
+        Intro
+      </h1>
+      <p>
+        Steve lives in seattle, Washington.
+      </p>
+      <p>
+        He works as a cahsier 40 hours a week at a grocery store in downtown seattle. With this job, he is able
+        to make $14.34 dollars per hour.
+      </p>
+      <p>
+        Living in Seattle costs quite a lot. Steve is currently living in an apartment in the capital hill area,
+        which costs him $xx dollars every month excluding untility fees. On average, he spends $xx dollars on food
+        and $xx on transportation each month.
+      </p>
+      <p>
+        There are approximately xxx people in the U.S. who are essential workers like Steve. While they play important
+        roles
+        in the society, their lifes are tough.
+      </p>
+      <p>
+        (*data to be filled in)
+      </p>
+    </section>
 
-  </section>
+    <section id="nationalview">
+      <h1>Average Hourly Income Per Capital:</h1>
+      <div id="nv"></div>
+    </section>
 
-  <section>
-    <h3>
-      (Introductory Story)
-    </h3> 
-    <p>
-      Steve lives in seattle, Washington. 
-    </p>
-    <p>
-      He works as a cahsier 40 hours a week at a grocery store in downtown seattle. With this job, he is able 
-      to make $14.34 dollars per hour. 
-    </p>
-    <p>
-      Living in Seattle costs quite a lot. Steve is currently living in an apartment in the capital hill area, 
-      which costs him $xx dollars every month excluding untility fees. On average, he spends $xx dollars on food 
-      and $xx on transportation each month.
-    </p>
-
-  </section>
-
-  
     <section id="annualWage">
-      <h3>Median Annual Wage in major cities:</h3>
+      <h1>Median Annual Wage in Major Cities:</h1>
       <div class="tableauPlaceholder" id="viz1614293267369" style="position: relative">
         <noscript>
           <a href="#">
@@ -124,7 +132,7 @@ vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
     </section>
 
     <section id="costOfLivingIndex">
-      <h3>Cost of Living Index in Major U.S. Cities:</h3>
+      <h1>Cost of Living Index in Major U.S. Cities:</h1>
       <div class="tableauPlaceholder" id="viz1614310854391" style="position: relative">
         <noscript>
           <a href="#">
@@ -132,13 +140,13 @@ vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
           </a>
         </noscript>
         <object class="tableauViz" style="display:none;">
-          <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"> 
-          <param name="embed_code_version" value="3"> 
+          <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F">
+          <param name="embed_code_version" value="3">
           <param name="site_root" value="">
           <param name="name" value="COL_index_visualizations&#47;Dashboard1">
           <param name="tabs" value="no">
           <param name="toolbar" value="yes">
-          <param name="static_image" value="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CO&#47;COL_index_visualizations&#47;Dashboard1&#47;1.png"> 
+          <param name="static_image" value="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CO&#47;COL_index_visualizations&#47;Dashboard1&#47;1.png">
           <param name="animate_transition" value="yes">
           <param name="display_static_image" value="yes">
           <param name="display_spinner" value="yes">
@@ -147,7 +155,7 @@ vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
           <param name="language" value="en">
           <param name="filter" value="publish=yes">
         </object>
-      </div>                
+      </div>
       <script>var divElement = document.getElementById('viz1614310854391');
 var vizElement = divElement.getElementsByTagName('object')[0];
 
@@ -165,24 +173,110 @@ if (divElement.offsetWidth > 800) {
 var scriptElement = document.createElement('script');
 scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
 vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
-    </section>    
-
-    <section id="vegaDemo">
-      <h3>Embed a Vega-Lite Visualization:</h3>
-      <div id="view"></div>
     </section>
 
-    <section id="nationalview">
-      <h3>Average hourly income per capita:</h3>
-      <div id="nv"></div>
-    </section>
+    <section id="aboutUs">
+      <h1>About us</h1>
+      <h2>Our Mission</h2>
+      <p>
+        It is never easy to make a living in a city, especially for those essential workers who are trying to settle
+        down in those major cities in the United States. Moreover, since the pandemic occurred, some of the lowest paid
+        in the cities have also experienced a heavy financial impact under the lockdown policy and economic regression.
+        Therefore, by taking a further exploration into the wages and living expenditures of some essential occupations
+        with relatively lower income, we are trying to find out where their living pressure is mostly coming from, and
+        finally come up with individual or governmental advice to help dealing with their problems and improving their
+        life quality. Hopefully, we would also like to make comparisons highlighting the impact of pandemic on essential
+        workers if supported by the latest data.
+      </p>
+      <h2>Our Design</h2>
+      <p>
+        In this project, we pick up five major cities for further exploration: Seattle(Northwest), Los
+        Angeles(Southwest), Chicago(Central North), Dallas(Central South), and New York(East). The geographic span of
+        the five major cities almost covers the whole territory of the US. Also, each city has unique features in its
+        culture, politics, economic condition and so on, so that it is worth comparing. Therefore, we are having these
+        five cities as representatives in our analysis.
 
-    <section id="d3Demo">
-      <h3>Embed a D3 Visualization:</h3>
-      <div id="d3-demo"></div>
-    </section>
+      </p>
+      <h2>Our page occurs in three sections</h2>
+      <ul>
+        <li>
+          We first begin with a story from the perspective of an American citizen who would like to choose an occupation
+          to earn money and a city to live in. The introduction in the form of story-telling can give the viewers a
+          realistic feeling and lead them to go through the upcoming exploration process. Then we make a nationwide
+          analysis on the average hourly income to show the wage distribution.
+        </li>
+        <li>
+          Afterwards, we highlight the each selected city on the clickable map to show its median annual wage by giving
+          visualizations of its trend through years and breakdown in different occupation categories. To make a more
+          contrast and vivid visualization, we also use a bar chart to compare the annual income for each occupation.
+          The viewers can play with the filter to change the year or occupation through the bar and the drop-down list.
 
-    <section id="rationale">
+        </li>
+        <li>
+          Next, we break down the cost of living into a pie chart to show the proportion of each category in the total
+          life expenditure. We also use bar chart to compare the cost of living index between cities. We would like to
+          link the median annual wages we get from the last graphs to plug into the cost-of-living chart to see if the
+          basic life expenditure can be covered or not.
+
+        </li>
+      </ul>
+
+      <h2>Our Data</h2>
+      <ol>
+        <li>
+          Wages of different occupations in Seattle: https://data.wa.gov
+
+        </li>
+        <li>
+          US Census: Cost of Living https://www.census.gov/library/publications/2011/compendia/statab/131ed/prices.html
+
+        </li>
+        <li>
+          US Bureau of labor statistics: https://www.bls.gov/
+
+        </li>
+        <li>
+          U.S bureau of labor force: https://www.bls.gov/bls
+
+        </li>
+      </ol>
+
+      <div id="teammates">
+        <h2>Our Team</h2>
+        <ul style="list-style-type:none">
+          <li>Ellen Zhu</li>
+          <li>Email: czhu22@uw.edu</li>
+          <li>Github: https://github.com/ChenyuanZhu</li>
+        </ul>
+
+        <ul style="list-style-type:none">
+          <li>Xuling Yang</li>
+          <li>Email: xuliny@uw.edu</li>
+          <li>Github: https://github.com/xuliny-1834826</li>
+        </ul>
+
+        <ul style="list-style-type:none">
+          <li>Grant Yang</li>
+          <li>Email: ley5@uw.edu</li>
+          <li>Github: https://github.com/Gyangle</li>
+        </ul>
+
+        <ul style="list-style-type:none">
+          <li>Jueyao Liu</li>
+          <li>
+            Email: jueyao99@uw.edu</li>
+          <li>Github: https://github.com/jueyao</li>
+        </ul>
+
+        <ul style="list-style-type:none">
+          <li>Tingting Yang</li>
+          <li>
+            Email: tingty@uw.edu</li>
+          <li>Github: https://github.com/MariaTYang</li>
+        </ul>
+
+      </div>
+
 
     </section>
 
@@ -196,7 +290,7 @@ vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
     <!-- or check load event fot addEventListener() if you want to put js in the <head> -->
     <script src="https://cse412-21w.github.io/cost-of-living-for-essential-workers/d3Demo.7d177574.js"></script>
     <script src="https://cse412-21w.github.io/cost-of-living-for-essential-workers/vegaDemo.b15bb0aa.js"></script>
-    <script src="https://cse412-21w.github.io/cost-of-living-for-essential-workers/nationalview.2c1b648f.js"></script>
+    <script src="https://cse412-21w.github.io/cost-of-living-for-essential-workers/nationalview.1890cace.js"></script>
   </main>
 
 </body>

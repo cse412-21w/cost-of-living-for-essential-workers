@@ -175,9 +175,10 @@ function drawAnnualIncomeCounty() {
     stroke: 'white',
     strokeWidth: 0.5
   }).data(vl.topojson("https://cdn.jsdelivr.net/npm/vega-datasets@1.31.1/data/us-10m.json").mesh('states'));
-  var trend = vl.markPoint().data(countydata2) //.select(sel)
-  .encode(vl.x().fieldO('Year'), vl.y().average('Income'), //vl.opacity().if(sel,vl.value(1)).value(0),
-  vl.tooltip('Income'));
+  var trend = vl.markPoint().data(countydata2).select(sel).encode(vl.x().fieldO('Year'), vl.y().average('Income'), vl.color().fieldQ('Income').scale({
+    domain: [0, 80],
+    scheme: 'tealblues'
+  }), vl.opacity().if(sel, vl.value(1)).value(0), vl.tooltip('Income'));
   return vl.hconcat(vl.layer(map, states).project(vl.projection('albersUsa')).width(800).height(400), trend).config({
     view: {
       stroke: null
@@ -187,4 +188,4 @@ function drawAnnualIncomeCounty() {
   });
 }
 },{"../static/income_per_hour_by_county.csv":"nugb","../static/income_per_hour_by_county2.csv":"hQvi"}]},{},["uC0e"], null)
-//# sourceMappingURL=https://cse412-21w.github.io/cost-of-living-for-essential-workers/nationalview.2c1b648f.js.map
+//# sourceMappingURL=https://cse412-21w.github.io/cost-of-living-for-essential-workers/nationalview.1890cace.js.map
