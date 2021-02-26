@@ -118,23 +118,23 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"nugb":[function(require,module,exports) {
-module.exports = "https://cse412-21w.github.io/cost-of-living-for-essential-workers/income_per_hour_by_county.4d86dd1a.csv";
-},{}],"rkNJ":[function(require,module,exports) {
-module.exports = "https://cse412-21w.github.io/cost-of-living-for-essential-workers/income_per_hour_by_state.75f1289d.csv";
+module.exports = "https://cse412-21w.github.io/cost-of-living-for-essential-workers/income_per_hour_by_county.430748b6.csv";
+},{}],"hQvi":[function(require,module,exports) {
+module.exports = "https://cse412-21w.github.io/cost-of-living-for-essential-workers/income_per_hour_by_county2.8b7fd9df.csv";
 },{}],"uC0e":[function(require,module,exports) {
 "use strict";
 
 var _income_per_hour_by_county = _interopRequireDefault(require("../static/income_per_hour_by_county.csv"));
 
-var _income_per_hour_by_state = _interopRequireDefault(require("../static/income_per_hour_by_state.csv"));
+var _income_per_hour_by_county2 = _interopRequireDefault(require("../static/income_per_hour_by_county2.csv"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 "use strict";
 
 var countydata = [];
-var statedata = []; //var yearrange = ['2016','2017','2018','2019'];
-
+var countydata2 = [];
+var years = [2016, 2017, 2018, 2019];
 var options = {
   config: {},
   init: function init(view) {
@@ -143,32 +143,42 @@ var options = {
   view: {
     renderer: "canvas"
   }
-}; //const selectYear = vl.selectSingle('Select') // name the selection 'Select'
-//.fields('Year')          // limit selection to the Major_Genre field
-//.init('2016') // use first genre entry as initial value
-//.bind(vl.menu(yearrange));
-
+};
 vl.register(vega, vegaLite, options);
 d3.csv(_income_per_hour_by_county.default).then(function (data2) {
   data2.forEach(function (d) {
     countydata.push(d);
   });
-  d3.csv(_income_per_hour_by_state.default).then(function (data3) {
+  d3.csv(_income_per_hour_by_county2.default).then(function (data3) {
     data3.forEach(function (e) {
-      statedata.push(e);
+      countydata2.push(e);
     });
-    drawAnnualIncomeCounty('2019');
+    drawAnnualIncomeCounty();
   });
 });
 
-function drawAnnualIncomeCounty(year) {
-  vl.markGeoshape({
-    stroke: '#aaa',
+function drawAnnualIncomeCounty() {
+  var sel = vl.selectSingle(); //const selectyear = vl.selectSingle('Select') 
+  //        .fields('Year')          
+  //      .init({Year: years[0]}) 
+  //    .bind({Year: vl.slider(2016,2019,1)});
+
+  var map = vl.markGeoshape({
+    stroke: 'lightgrey',
     strokeWidth: 0.25
-  }).data(vl.topojson("https://cdn.jsdelivr.net/npm/vega-datasets@1.31.1/data/us-10m.json").feature('counties')).transform(vl.lookup('id').from(vl.data(countydata).key('GeoFips').fields(['GeoName', year]))).encode(vl.color().fieldQ(year).scale({
-    domain: [0, 100],
-    scheme: 'lighttealblue'
-  }), vl.tooltip(['GeoName', year])).project(vl.projection('albersUsa')).width(890).height(500).config({
+  }).data(vl.topojson("https://cdn.jsdelivr.net/npm/vega-datasets@1.31.1/data/us-10m.json").feature('counties')).select(sel).transform(vl.lookup('id').from(vl.data(countydata).key('GeoFips').fields(['2019', 'GeoName']))).encode(vl.color().fieldQ('2019').scale({
+    domain: [0, 80],
+    scheme: 'tealblues'
+  }), vl.opacity().if(sel, vl.value(1)).value(0.5), vl.tooltip(['2019', 'GeoName']));
+  var states = vl.markGeoshape({
+    fill: null,
+    stroke: 'white',
+    strokeWidth: 0.5
+  }).data(vl.topojson("https://cdn.jsdelivr.net/npm/vega-datasets@1.31.1/data/us-10m.json").mesh('states'));
+  var trend = vl.markPoint().data(countydata2) //.select(sel)
+  .encode(vl.x().fieldO('Year'), vl.y().average('Income'), //vl.opacity().if(sel,vl.value(1)).value(0),
+  vl.tooltip('Income'));
+  return vl.hconcat(vl.layer(map, states).project(vl.projection('albersUsa')).width(800).height(400), trend).config({
     view: {
       stroke: null
     }
@@ -176,5 +186,5 @@ function drawAnnualIncomeCounty(year) {
     document.getElementById('nv').appendChild(viewElement);
   });
 }
-},{"../static/income_per_hour_by_county.csv":"nugb","../static/income_per_hour_by_state.csv":"rkNJ"}]},{},["uC0e"], null)
-//# sourceMappingURL=https://cse412-21w.github.io/cost-of-living-for-essential-workers/nationalview.aad1a5cd.js.map
+},{"../static/income_per_hour_by_county.csv":"nugb","../static/income_per_hour_by_county2.csv":"hQvi"}]},{},["uC0e"], null)
+//# sourceMappingURL=https://cse412-21w.github.io/cost-of-living-for-essential-workers/nationalview.2c1b648f.js.map

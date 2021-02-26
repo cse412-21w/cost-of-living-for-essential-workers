@@ -119,22 +119,22 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   return newRequire;
 })({"../static/income_per_hour_by_county.csv":[function(require,module,exports) {
 module.exports = "/income_per_hour_by_county.0a2fdeba.csv";
-},{}],"../static/income_per_hour_by_state.csv":[function(require,module,exports) {
-module.exports = "/income_per_hour_by_state.b0c5f2ab.csv";
+},{}],"../static/income_per_hour_by_county2.csv":[function(require,module,exports) {
+module.exports = "/income_per_hour_by_county2.ffb6ccec.csv";
 },{}],"nationalview.js":[function(require,module,exports) {
 "use strict";
 
 var _income_per_hour_by_county = _interopRequireDefault(require("../static/income_per_hour_by_county.csv"));
 
-var _income_per_hour_by_state = _interopRequireDefault(require("../static/income_per_hour_by_state.csv"));
+var _income_per_hour_by_county2 = _interopRequireDefault(require("../static/income_per_hour_by_county2.csv"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 "use strict";
 
 var countydata = [];
-var statedata = []; //var yearrange = ['2016','2017','2018','2019'];
-
+var countydata2 = [];
+var years = [2016, 2017, 2018, 2019];
 var options = {
   config: {},
   init: function init(view) {
@@ -143,32 +143,42 @@ var options = {
   view: {
     renderer: "canvas"
   }
-}; //const selectYear = vl.selectSingle('Select') // name the selection 'Select'
-//.fields('Year')          // limit selection to the Major_Genre field
-//.init('2016') // use first genre entry as initial value
-//.bind(vl.menu(yearrange));
-
+};
 vl.register(vega, vegaLite, options);
 d3.csv(_income_per_hour_by_county.default).then(function (data2) {
   data2.forEach(function (d) {
     countydata.push(d);
   });
-  d3.csv(_income_per_hour_by_state.default).then(function (data3) {
+  d3.csv(_income_per_hour_by_county2.default).then(function (data3) {
     data3.forEach(function (e) {
-      statedata.push(e);
+      countydata2.push(e);
     });
-    drawAnnualIncomeCounty('2019');
+    drawAnnualIncomeCounty();
   });
 });
 
-function drawAnnualIncomeCounty(year) {
-  vl.markGeoshape({
-    stroke: '#aaa',
+function drawAnnualIncomeCounty() {
+  var sel = vl.selectSingle(); //const selectyear = vl.selectSingle('Select') 
+  //        .fields('Year')          
+  //      .init({Year: years[0]}) 
+  //    .bind({Year: vl.slider(2016,2019,1)});
+
+  var map = vl.markGeoshape({
+    stroke: 'lightgrey',
     strokeWidth: 0.25
-  }).data(vl.topojson("https://cdn.jsdelivr.net/npm/vega-datasets@1.31.1/data/us-10m.json").feature('counties')).transform(vl.lookup('id').from(vl.data(countydata).key('GeoFips').fields(['GeoName', year]))).encode(vl.color().fieldQ(year).scale({
-    domain: [0, 100],
-    scheme: 'lighttealblue'
-  }), vl.tooltip(['GeoName', year])).project(vl.projection('albersUsa')).width(890).height(500).config({
+  }).data(vl.topojson("https://cdn.jsdelivr.net/npm/vega-datasets@1.31.1/data/us-10m.json").feature('counties')).select(sel).transform(vl.lookup('id').from(vl.data(countydata).key('GeoFips').fields(['2019', 'GeoName']))).encode(vl.color().fieldQ('2019').scale({
+    domain: [0, 80],
+    scheme: 'tealblues'
+  }), vl.opacity().if(sel, vl.value(1)).value(0.5), vl.tooltip(['2019', 'GeoName']));
+  var states = vl.markGeoshape({
+    fill: null,
+    stroke: 'white',
+    strokeWidth: 0.5
+  }).data(vl.topojson("https://cdn.jsdelivr.net/npm/vega-datasets@1.31.1/data/us-10m.json").mesh('states'));
+  var trend = vl.markPoint().data(countydata2) //.select(sel)
+  .encode(vl.x().fieldO('Year'), vl.y().average('Income'), //vl.opacity().if(sel,vl.value(1)).value(0),
+  vl.tooltip('Income'));
+  return vl.hconcat(vl.layer(map, states).project(vl.projection('albersUsa')).width(800).height(400), trend).config({
     view: {
       stroke: null
     }
@@ -176,7 +186,7 @@ function drawAnnualIncomeCounty(year) {
     document.getElementById('nv').appendChild(viewElement);
   });
 }
-},{"../static/income_per_hour_by_county.csv":"../static/income_per_hour_by_county.csv","../static/income_per_hour_by_state.csv":"../static/income_per_hour_by_state.csv"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"../static/income_per_hour_by_county.csv":"../static/income_per_hour_by_county.csv","../static/income_per_hour_by_county2.csv":"../static/income_per_hour_by_county2.csv"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -204,7 +214,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63123" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56086" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
