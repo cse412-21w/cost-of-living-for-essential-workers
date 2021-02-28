@@ -117,75 +117,63 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"nugb":[function(require,module,exports) {
-module.exports = "https://cse412-21w.github.io/cost-of-living-for-essential-workers/income_per_hour_by_county.430748b6.csv";
-},{}],"hQvi":[function(require,module,exports) {
-module.exports = "https://cse412-21w.github.io/cost-of-living-for-essential-workers/income_per_hour_by_county2.8b7fd9df.csv";
-},{}],"uC0e":[function(require,module,exports) {
+})({"ZQwg":[function(require,module,exports) {
+module.exports = "https://cse412-21w.github.io/cost-of-living-for-essential-workers/sunshine.45a98b78.csv";
+},{}],"CsaW":[function(require,module,exports) {
 "use strict";
 
-var _income_per_hour_by_county = _interopRequireDefault(require("../static/income_per_hour_by_county.csv"));
-
-var _income_per_hour_by_county2 = _interopRequireDefault(require("../static/income_per_hour_by_county2.csv"));
+var _sunshine = _interopRequireDefault(require("../static/sunshine.csv"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-"use strict";
+// import dataset
+"use strict"; // the code should be executed in "strict mode".
+// With strict mode, you can not, for example, use undeclared variables
 
-var countydata = [];
-var countydata2 = [];
-var years = [2016, 2017, 2018, 2019];
+
+var sunshineArray = []; // used to store data later
+
+var citySet = [];
 var options = {
-  config: {},
+  config: {// Vega-Lite default configuration
+  },
   init: function init(view) {
+    // initialize tooltip handler
     view.tooltip(new vegaTooltip.Handler().call);
   },
   view: {
+    // view constructor options
+    // remove the loader if you don't want to default to vega-datasets!
+    //   loader: vega.loader({
+    //     baseURL: "",
+    //   }),
     renderer: "canvas"
   }
 };
-vl.register(vega, vegaLite, options);
-d3.csv(_income_per_hour_by_county.default).then(function (data2) {
-  data2.forEach(function (d) {
-    countydata.push(d);
+vl.register(vega, vegaLite, options); // Again, We use d3.csv() to process data
+
+d3.csv(_sunshine.default).then(function (data) {
+  data.forEach(function (d) {
+    sunshineArray.push(d);
+
+    if (!citySet.includes(d.city)) {
+      citySet.push(d.city);
+    }
   });
-  d3.csv(_income_per_hour_by_county2.default).then(function (data3) {
-    data3.forEach(function (e) {
-      countydata2.push(e);
-    });
-    drawAnnualIncomeCounty();
-  });
+  drawBarVegaLite();
 });
 
-function drawAnnualIncomeCounty() {
-  var sel = vl.selectSingle(); //const selectyear = vl.selectSingle('Select') 
-  //        .fields('Year')          
-  //      .init({Year: years[0]}) 
-  //    .bind({Year: vl.slider(2016,2019,1)});
-
-  var map = vl.markGeoshape({
-    stroke: 'lightgrey',
-    strokeWidth: 0.25
-  }).data(vl.topojson("https://cdn.jsdelivr.net/npm/vega-datasets@1.31.1/data/us-10m.json").feature('counties')).select(sel).transform(vl.lookup('id').from(vl.data(countydata).key('GeoFips').fields(['2019', 'GeoName']))).encode(vl.color().fieldQ('2019').scale({
-    domain: [0, 80],
-    scheme: 'tealblues'
-  }), vl.opacity().if(sel, vl.value(1)).value(0.5), vl.tooltip(['2019', 'GeoName']));
-  var states = vl.markGeoshape({
-    fill: null,
-    stroke: 'white',
-    strokeWidth: 0.5
-  }).data(vl.topojson("https://cdn.jsdelivr.net/npm/vega-datasets@1.31.1/data/us-10m.json").mesh('states'));
-  var trend = vl.markPoint().data(countydata2).select(sel).encode(vl.x().fieldO('Year'), vl.y().average('Income'), vl.color().fieldQ('Income').scale({
-    domain: [0, 80],
-    scheme: 'tealblues'
-  }), vl.opacity().if(sel, vl.value(1)).value(0), vl.tooltip('Income'));
-  return vl.hconcat(vl.layer(map, states).project(vl.projection('albersUsa')).width(800).height(400), trend).config({
-    view: {
-      stroke: null
-    }
-  }).render().then(function (viewElement) {
-    document.getElementById('nv').appendChild(viewElement);
+function drawBarVegaLite() {
+  // var sunshine = add_data(vl, sunshine.csv, format_type = NULL);
+  // your visualization goes here
+  vl.markBar({
+    filled: true,
+    color: 'teal'
+  }).data(sunshineArray).encode(vl.x().fieldN('month').sort('none'), vl.y().fieldQ('sunshine'), vl.tooltip(['sunshine'])).width(450).height(450).render().then(function (viewElement) {
+    // render returns a promise to a DOM element containing the chart
+    // viewElement.value contains the Vega View object instance
+    document.getElementById('view').appendChild(viewElement);
   });
 }
-},{"../static/income_per_hour_by_county.csv":"nugb","../static/income_per_hour_by_county2.csv":"hQvi"}]},{},["uC0e"], null)
-//# sourceMappingURL=https://cse412-21w.github.io/cost-of-living-for-essential-workers/nationalview.1890cace.js.map
+},{"../static/sunshine.csv":"ZQwg"}]},{},["CsaW"], null)
+//# sourceMappingURL=https://cse412-21w.github.io/cost-of-living-for-essential-workers/vegaDemo.40e2e530.js.map

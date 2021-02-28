@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>CSE 412 Project Demo</title>
-  <link rel="stylesheet" href="https://cse412-21w.github.io/cost-of-living-for-essential-workers/style.88c86aae.css">
+  <link rel="stylesheet" href="https://cse412-21w.github.io/cost-of-living-for-essential-workers/style.94086299.css">
   <script>// nav bar behavior
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
@@ -43,7 +43,7 @@ function closeNav() {
 
     <section class="title" id="title">
       <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
-      <a href="https://github.com/cse412-21w/cost-of-living-for-essential-workers">Cost Of Living For Essential
+      <a href="https://github.com/cse412-21w/cost-of-living-for-essential-workers">Cost of Living For Essential
         Workers</a>
     </section>
     <section id="overview">
@@ -85,6 +85,25 @@ function closeNav() {
     <section id="nationalview">
       <h1>Average Hourly Income Per Capital:</h1>
       <div id="nv"></div>
+      <p>
+        *average hourly income calculated by assuming on average, each person works 40 hours per week with 52 weeks per year. 
+      </p>
+      <p>
+        (features to be added: when a county is clicked on the map, the graph on the right shows a the average hourly income per capita
+        for each year)
+      </p>
+
+    </section>
+
+    <section id="transition">
+      <p>
+        In 2019, the U.S. national median annual income is $xxx. The median of the essential workers is $xxx.
+        About xx% of the U.S. population works as an essential worker. (some overall information presented with 
+        small and simply visualizations)
+      </p>
+      <p>
+        (scroll down to see a closer analysis for the life of essential workers in five of the major cities)
+      </p>
     </section>
 
     <section id="annualWage">
@@ -131,8 +150,20 @@ scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
 vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
     </section>
 
-    <section id="costOfLivingIndex">
-      <h1>Cost of Living Index in Major U.S. Cities:</h1>
+    <section id="costOfLivingIndexExplanation">
+      <h1>Cost of Living Index in Major U.S. Cities</h1>
+      <p>
+        Cost of living is a metric of the prices needed to cover basic expenses, and is often used to compared how expensive it is to live in one city compared to the other. A person living in a city with a higher cost of living will require more money to afford the exact same lifestyle as someone in a city with a lower cost of living. 
+      </p>
+      <p>
+        A cost of living index is a number representing the relative price levels for consumer goods and services. While many such indexes exist, the Cost of Living Index compiled by the American Chamber of Commerce Researchers Association (ACCRA) and the Council for Community and Economic Research (C2ER) is one of the most widely accepted in the United States. It uses the average cost of living for all participaing areas, both metropolitan and nonmetropolitan, for the index of 100. Thus the index is read as a percentage of the average for all places. 
+      </p>
+      <p>
+        The composite Cost of Living Index is the weighted average of the index calculated in different categories, such as housing and groceries. 
+      </p>
+    </section>
+
+    <section id="costOfLivingIndexVisualization">
       <div class="tableauPlaceholder" id="viz1614310854391" style="position: relative">
         <noscript>
           <a href="#">
@@ -190,7 +221,7 @@ vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
       </p>
       <h2>Our Design</h2>
       <p>
-        In this project, we pick up five major cities for further exploration: Seattle(Northwest), Los
+        In this project, we picked five major cities for further exploration: Seattle(Northwest), Los
         Angeles(Southwest), Chicago(Central North), Dallas(Central South), and New York(East). The geographic span of
         the five major cities almost covers the whole territory of the US. Also, each city has unique features in its
         culture, politics, economic condition and so on, so that it is worth comparing. Therefore, we are having these
@@ -223,6 +254,9 @@ vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
 
       <h2>Our Data</h2>
       <ol>
+        <li>
+          Bureau of Economic Analysis: https://www.bea.gov/data/income-saving
+        </li>
         <li>
           Wages of different occupations in Seattle: https://data.wa.gov
 
@@ -288,9 +322,9 @@ vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
 
     <!-- it is recommended to put js files before </body> -->
     <!-- or check load event fot addEventListener() if you want to put js in the <head> -->
-    <script src="https://cse412-21w.github.io/cost-of-living-for-essential-workers/d3Demo.7d177574.js"></script>
-    <script src="https://cse412-21w.github.io/cost-of-living-for-essential-workers/vegaDemo.b15bb0aa.js"></script>
-    <script src="https://cse412-21w.github.io/cost-of-living-for-essential-workers/nationalview.1890cace.js"></script>
+    <script src="https://cse412-21w.github.io/cost-of-living-for-essential-workers/d3Demo.c3cad310.js"></script>
+    <script src="https://cse412-21w.github.io/cost-of-living-for-essential-workers/vegaDemo.40e2e530.js"></script>
+    <script src="https://cse412-21w.github.io/cost-of-living-for-essential-workers/nationalview.ac10fabf.js"></script>
   </main>
 
 </body>
