@@ -120,7 +120,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 })({"nugb":[function(require,module,exports) {
 module.exports = "https://cse412-21w.github.io/cost-of-living-for-essential-workers/income_per_hour_by_county.8f0633d1.csv";
 },{}],"hQvi":[function(require,module,exports) {
-module.exports = "https://cse412-21w.github.io/cost-of-living-for-essential-workers/income_per_hour_by_county2.d7665522.csv";
+module.exports = "https://cse412-21w.github.io/cost-of-living-for-essential-workers/income_per_hour_by_county2.77418deb.csv";
 },{}],"uC0e":[function(require,module,exports) {
 "use strict";
 
@@ -188,4 +188,4 @@ function drawAnnualIncomeCounty() {
   });
 }
 },{"../static/income_per_hour_by_county.csv":"nugb","../static/income_per_hour_by_county2.csv":"hQvi"}]},{},["uC0e"], null)
-//# sourceMappingURL=https://cse412-21w.github.io/cost-of-living-for-essential-workers/nationalview.ac10fabf.js.map
+//# sourceMappingURL=https://cse412-21w.github.io/cost-of-living-for-essential-workers/nationalview.cd352baa.js.map
