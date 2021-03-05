@@ -1,0 +1,686 @@
+Area.Title..group.,Occ.Title..group.,Year,mean_annual_salary
+Chicago,Agricultrual & Fishing Workers,2016,28812.222222222223
+Chicago,Agricultrual & Fishing Workers,2017,28935.555555555555
+Chicago,Agricultrual & Fishing Workers,2018,29387.5
+Chicago,Agricultrual & Fishing Workers,2019,31601.428571428572
+Chicago,All Occupations,2016,52410
+Chicago,All Occupations,2017,53285
+Chicago,All Occupations,2018,54730
+Chicago,All Occupations,2019,56145
+Chicago,Bus Drivers,2016,43450
+Chicago,Bus Drivers,2017,44737.5
+Chicago,Bus Drivers,2018,47337.5
+Chicago,Bus Drivers,2019,50260
+Chicago,Cashiers,2016,27622.5
+Chicago,Cashiers,2017,27645
+Chicago,Cashiers,2018,29520
+Chicago,Cashiers,2019,30362.5
+Chicago,Childcare Workers,2016,23875
+Chicago,Childcare Workers,2017,23700
+Chicago,Childcare Workers,2018,24290
+Chicago,Childcare Workers,2019,25620
+Chicago,Construction Workers,2016,49088.666666666664
+Chicago,Construction Workers,2017,NA
+Chicago,Construction Workers,2018,55548.82352941176
+Chicago,Construction Workers,2019,55220
+Chicago,Cooks,2016,24297
+Chicago,Cooks,2017,25544
+Chicago,Cooks,2018,26368
+Chicago,Cooks,2019,28032
+Chicago,counselors,2016,44540
+Chicago,counselors,2017,46083
+Chicago,counselors,2018,45357
+Chicago,counselors,2019,52349
+Chicago,Electricians,2016,67280
+Chicago,Electricians,2017,65607.5
+Chicago,Electricians,2018,67787.5
+Chicago,Electricians,2019,70720
+Chicago,Electricity,2016,NA
+Chicago,Electricity,2017,NA
+Chicago,Electricity,2018,75022.30769230769
+Chicago,Electricity,2019,77376.92307692308
+Chicago,emergency associated worker,2016,34075
+Chicago,emergency associated worker,2017,34630
+Chicago,emergency associated worker,2018,34955
+Chicago,emergency associated worker,2019,35675
+Chicago,Ferry captains,2016,58340
+Chicago,Ferry captains,2017,59135
+Chicago,Ferry captains,2018,62605
+Chicago,Ferry captains,2019,71045
+Chicago,Food Preparation Workers,2016,22392.5
+Chicago,Food Preparation Workers,2017,23322.5
+Chicago,Food Preparation Workers,2018,24525
+Chicago,Food Preparation Workers,2019,25850
+Chicago,Food Processing Workers,2016,27983.125
+Chicago,Food Processing Workers,2017,28877.5
+Chicago,Food Processing Workers,2018,30170
+Chicago,Food Processing Workers,2019,32068.75
+Chicago,Lab technician,2016,49285
+Chicago,Lab technician,2017,46815
+Chicago,Lab technician,2018,53007.5
+Chicago,Lab technician,2019,52075
+Chicago,Machinists,2016,43955
+Chicago,Machinists,2017,44870
+Chicago,Machinists,2018,47675
+Chicago,Machinists,2019,48225
+Chicago,Nurses,2016,89816.66666666667
+Chicago,Nurses,2017,NA
+Chicago,Nurses,2018,107678
+Chicago,Nurses,2019,119667.5
+Chicago,Nursing home workers,2016,27591.25
+Chicago,Nursing home workers,2017,27683.75
+Chicago,Nursing home workers,2018,28497.5
+Chicago,Nursing home workers,2019,29536.666666666668
+Chicago,Oil Natural Gas,2016,54700
+Chicago,Oil Natural Gas,2017,57984.375
+Chicago,Oil Natural Gas,2018,62793.333333333336
+Chicago,Oil Natural Gas,2019,62154.28571428572
+Chicago,Plumbers,2016,69942.5
+Chicago,Plumbers,2017,73075
+Chicago,Plumbers,2018,75935
+Chicago,Plumbers,2019,79775
+Chicago,Postal Service & Delivery,2016,45360
+Chicago,Postal Service & Delivery,2017,45948.333333333336
+Chicago,Postal Service & Delivery,2018,47876.666666666664
+Chicago,Postal Service & Delivery,2019,52135
+Chicago,Servers,2016,22463
+Chicago,Servers,2017,23602
+Chicago,Servers,2018,23823
+Chicago,Servers,2019,24401.25
+Chicago,social workers,2016,59327.5
+Chicago,social workers,2017,58021.25
+Chicago,social workers,2018,54922.5
+Chicago,social workers,2019,59231.25
+Chicago,Subway and Streetcar Operators,2016,65805
+Chicago,Subway and Streetcar Operators,2017,69870
+Chicago,Taxi Drivers,2016,27365
+Chicago,Taxi Drivers,2017,27275
+Chicago,Taxi Drivers,2018,29815
+Chicago,"Teachers, except secondary school",2016,62437.5
+Chicago,"Teachers, except secondary school",2017,61100.5
+Chicago,"Teachers, except secondary school",2018,59963
+Chicago,"Teachers, except secondary school",2019,60452.5
+Chicago,Transportation Engineers,2016,57342
+Chicago,Transportation Engineers,2017,59802.22222222222
+Chicago,Transportation Engineers,2018,NA
+Chicago,Transportation Engineers,2019,61649.47368421053
+Chicago,Truck Drivers,2016,38130
+Chicago,Truck Drivers,2017,37485
+Chicago,Truck Drivers,2018,38802.5
+Chicago,Truck Drivers,2019,41511.666666666664
+Chicago,Water and Wastewater ,2016,58750
+Chicago,Water and Wastewater ,2017,59035
+Chicago,Water and Wastewater ,2018,60970
+Chicago,Water and Wastewater ,2019,61320
+Dallas,Agricultrual & Fishing Workers,2016,23195.555555555555
+Dallas,Agricultrual & Fishing Workers,2017,27687
+Dallas,Agricultrual & Fishing Workers,2018,25521
+Dallas,Agricultrual & Fishing Workers,2019,26763
+Dallas,All Occupations,2016,49060
+Dallas,All Occupations,2017,49975
+Dallas,All Occupations,2018,51155
+Dallas,All Occupations,2019,52145
+Dallas,Bus Drivers,2016,32417.5
+Dallas,Bus Drivers,2017,33215
+Dallas,Bus Drivers,2018,34832.5
+Dallas,Bus Drivers,2019,42385
+Dallas,Cashiers,2016,26571.428571428572
+Dallas,Cashiers,2017,26660
+Dallas,Cashiers,2018,29200
+Dallas,Cashiers,2019,29948.571428571428
+Dallas,Childcare Workers,2016,20935
+Dallas,Childcare Workers,2017,21650
+Dallas,Childcare Workers,2018,22330
+Dallas,Childcare Workers,2019,23490
+Dallas,Construction Workers,2016,33908.23529411765
+Dallas,Construction Workers,2017,35195.882352941175
+Dallas,Construction Workers,2018,36068.82352941176
+Dallas,Construction Workers,2019,37626.470588235294
+Dallas,Cooks,2016,23907
+Dallas,Cooks,2017,24560
+Dallas,Cooks,2018,24329
+Dallas,Cooks,2019,24908
+Dallas,counselors,2016,50846.666666666664
+Dallas,counselors,2017,52936
+Dallas,counselors,2018,52562
+Dallas,counselors,2019,53605
+Dallas,Electricians,2016,50317.5
+Dallas,Electricians,2017,52902.5
+Dallas,Electricians,2018,53745
+Dallas,Electricians,2019,54977.5
+Dallas,Electricity,2016,59030
+Dallas,Electricity,2017,60793.63636363636
+Dallas,Electricity,2018,63160
+Dallas,Electricity,2019,64290
+Dallas,emergency associated worker,2016,32550
+Dallas,emergency associated worker,2017,33720
+Dallas,emergency associated worker,2018,34290
+Dallas,emergency associated worker,2019,33286.666666666664
+Dallas,Ferry captains,2016,112100
+Dallas,Ferry captains,2017,110940
+Dallas,Ferry captains,2018,103950
+Dallas,Ferry captains,2019,71575
+Dallas,Food Preparation Workers,2016,20870
+Dallas,Food Preparation Workers,2017,21977.5
+Dallas,Food Preparation Workers,2018,22342.5
+Dallas,Food Preparation Workers,2019,23252.5
+Dallas,Food Processing Workers,2016,25295.333333333332
+Dallas,Food Processing Workers,2017,26515.333333333332
+Dallas,Food Processing Workers,2018,27632
+Dallas,Food Processing Workers,2019,28451.875
+Dallas,Lab technician,2016,47716.666666666664
+Dallas,Lab technician,2017,45987.5
+Dallas,Lab technician,2018,46645
+Dallas,Lab technician,2019,47227.5
+Dallas,Machinists,2016,42787.5
+Dallas,Machinists,2017,43722.5
+Dallas,Machinists,2018,45200
+Dallas,Machinists,2019,45755
+Dallas,Nurses,2016,119621
+Dallas,Nurses,2017,106320
+Dallas,Nurses,2018,99193
+Dallas,Nurses,2019,103887.14285714286
+Dallas,Nursing home workers,2016,24458.75
+Dallas,Nursing home workers,2017,24895
+Dallas,Nursing home workers,2018,25627.5
+Dallas,Nursing home workers,2019,27528.333333333332
+Dallas,Oil Natural Gas,2016,52567.05882352941
+Dallas,Oil Natural Gas,2017,53114.117647058825
+Dallas,Oil Natural Gas,2018,54944.117647058825
+Dallas,Oil Natural Gas,2019,57286
+Dallas,Plumbers,2016,39167.5
+Dallas,Plumbers,2017,41017.5
+Dallas,Plumbers,2018,41957.5
+Dallas,Plumbers,2019,43300
+Dallas,Postal Service & Delivery,2016,45100
+Dallas,Postal Service & Delivery,2017,45970
+Dallas,Postal Service & Delivery,2018,47980
+Dallas,Postal Service & Delivery,2019,52707.5
+Dallas,Servers,2016,22230
+Dallas,Servers,2017,22933
+Dallas,Servers,2018,22823
+Dallas,Servers,2019,22693.75
+Dallas,social workers,2016,54130
+Dallas,social workers,2017,54122.5
+Dallas,social workers,2018,54382.5
+Dallas,social workers,2019,52847.5
+Dallas,Subway and Streetcar Operators,2016,46590
+Dallas,Subway and Streetcar Operators,2017,49600
+Dallas,Subway and Streetcar Operators,2018,49390
+Dallas,Subway and Streetcar Operators,2019,51770
+Dallas,Taxi Drivers,2016,25200
+Dallas,Taxi Drivers,2017,25825
+Dallas,Taxi Drivers,2018,26270
+Dallas,"Teachers, except secondary school",2016,54480.5
+Dallas,"Teachers, except secondary school",2017,55645
+Dallas,"Teachers, except secondary school",2018,54750.5
+Dallas,"Teachers, except secondary school",2019,54460.5
+Dallas,Transportation Engineers,2016,NA
+Dallas,Transportation Engineers,2017,56717.64705882353
+Dallas,Transportation Engineers,2018,58082.10526315789
+Dallas,Transportation Engineers,2019,61336.470588235294
+Dallas,Truck Drivers,2016,36927.5
+Dallas,Truck Drivers,2017,37645
+Dallas,Truck Drivers,2018,38707.5
+Dallas,Truck Drivers,2019,39010
+Dallas,Water and Wastewater ,2016,39120
+Dallas,Water and Wastewater ,2017,39840
+Dallas,Water and Wastewater ,2018,40875
+Dallas,Water and Wastewater ,2019,41795
+Los Angeles,Agricultrual & Fishing Workers,2016,29789.090909090908
+Los Angeles,Agricultrual & Fishing Workers,2017,31099.090909090908
+Los Angeles,Agricultrual & Fishing Workers,2018,31419
+Los Angeles,Agricultrual & Fishing Workers,2019,32996
+Los Angeles,All Occupations,2016,56245
+Los Angeles,All Occupations,2017,56610
+Los Angeles,All Occupations,2018,58520
+Los Angeles,All Occupations,2019,60530
+Los Angeles,Bus Drivers,2016,37865
+Los Angeles,Bus Drivers,2017,39562.5
+Los Angeles,Bus Drivers,2018,42890
+Los Angeles,Bus Drivers,2019,50540
+Los Angeles,Cashiers,2016,30268.571428571428
+Los Angeles,Cashiers,2017,30660
+Los Angeles,Cashiers,2018,31741.428571428572
+Los Angeles,Cashiers,2019,33072.5
+Los Angeles,Childcare Workers,2016,26830
+Los Angeles,Childcare Workers,2017,27630
+Los Angeles,Childcare Workers,2018,28255
+Los Angeles,Childcare Workers,2019,29430
+Los Angeles,Construction Workers,2016,49398.333333333336
+Los Angeles,Construction Workers,2017,50819.444444444445
+Los Angeles,Construction Workers,2018,49752.94117647059
+Los Angeles,Construction Workers,2019,52183.529411764706
+Los Angeles,Cooks,2016,29439.090909090908
+Los Angeles,Cooks,2017,31398.333333333332
+Los Angeles,Cooks,2018,32181.666666666668
+Los Angeles,Cooks,2019,33671.666666666664
+Los Angeles,counselors,2016,48952.5
+Los Angeles,counselors,2017,50135
+Los Angeles,counselors,2018,54042
+Los Angeles,counselors,2019,55214
+Los Angeles,Electricians,2016,62742.5
+Los Angeles,Electricians,2017,63127.5
+Los Angeles,Electricians,2018,65135
+Los Angeles,Electricians,2019,66025
+Los Angeles,Electricity,2016,82111.81818181818
+Los Angeles,Electricity,2017,82661.81818181818
+Los Angeles,Electricity,2018,84492.72727272728
+Los Angeles,Electricity,2019,87260.90909090909
+Los Angeles,emergency associated worker,2016,31357.5
+Los Angeles,emergency associated worker,2017,30580
+Los Angeles,emergency associated worker,2018,36556.666666666664
+Los Angeles,emergency associated worker,2019,42120
+Los Angeles,Ferry captains,2016,62300
+Los Angeles,Ferry captains,2017,66140
+Los Angeles,Ferry captains,2018,68830
+Los Angeles,Ferry captains,2019,80000
+Los Angeles,Food Preparation Workers,2016,23912.5
+Los Angeles,Food Preparation Workers,2017,25102.5
+Los Angeles,Food Preparation Workers,2018,26225
+Los Angeles,Food Preparation Workers,2019,27602.5
+Los Angeles,Food Processing Workers,2016,27631.25
+Los Angeles,Food Processing Workers,2017,28761.875
+Los Angeles,Food Processing Workers,2018,30262.5
+Los Angeles,Food Processing Workers,2019,31140
+Los Angeles,Lab technician,2016,56628.333333333336
+Los Angeles,Lab technician,2017,51267.5
+Los Angeles,Lab technician,2018,53330
+Los Angeles,Lab technician,2019,58432.5
+Los Angeles,Machinists,2016,44197.5
+Los Angeles,Machinists,2017,47880
+Los Angeles,Machinists,2018,50872.5
+Los Angeles,Machinists,2019,52657.5
+Los Angeles,Nurses,2016,126240
+Los Angeles,Nurses,2017,127860
+Los Angeles,Nurses,2018,128986
+Los Angeles,Nurses,2019,157336.25
+Los Angeles,Nursing home workers,2016,32428.75
+Los Angeles,Nursing home workers,2017,33685
+Los Angeles,Nursing home workers,2018,34777.5
+Los Angeles,Nursing home workers,2019,36663.333333333336
+Los Angeles,Oil Natural Gas,2016,64250.625
+Los Angeles,Oil Natural Gas,2017,67769.33333333333
+Los Angeles,Oil Natural Gas,2018,66375.625
+Los Angeles,Oil Natural Gas,2019,NA
+Los Angeles,Plumbers,2016,54575
+Los Angeles,Plumbers,2017,54470
+Los Angeles,Plumbers,2018,58437.5
+Los Angeles,Plumbers,2019,61407.5
+Los Angeles,Postal Service & Delivery,2016,46396.666666666664
+Los Angeles,Postal Service & Delivery,2017,46651.666666666664
+Los Angeles,Postal Service & Delivery,2018,48293.333333333336
+Los Angeles,Postal Service & Delivery,2019,53095
+Los Angeles,Servers,2016,28316
+Los Angeles,Servers,2017,28873
+Los Angeles,Servers,2018,28590
+Los Angeles,Servers,2019,30891.25
+Los Angeles,social workers,2016,NA
+Los Angeles,social workers,2017,62928.75
+Los Angeles,social workers,2018,68671.25
+Los Angeles,social workers,2019,69796.25
+Los Angeles,Subway and Streetcar Operators,2016,59510
+Los Angeles,Subway and Streetcar Operators,2017,61800
+Los Angeles,Subway and Streetcar Operators,2018,57550
+Los Angeles,Subway and Streetcar Operators,2019,58660
+Los Angeles,Taxi Drivers,2016,30240
+Los Angeles,Taxi Drivers,2017,30985
+Los Angeles,Taxi Drivers,2018,32545
+Los Angeles,"Teachers, except secondary school",2016,65409.5
+Los Angeles,"Teachers, except secondary school",2017,68655.26315789473
+Los Angeles,"Teachers, except secondary school",2018,69360
+Los Angeles,"Teachers, except secondary school",2019,70288.94736842105
+Los Angeles,Transportation Engineers,2016,57945.23809523809
+Los Angeles,Transportation Engineers,2017,62943.5
+Los Angeles,Transportation Engineers,2018,NA
+Los Angeles,Transportation Engineers,2019,65033.47826086957
+Los Angeles,Truck Drivers,2016,39755
+Los Angeles,Truck Drivers,2017,40330
+Los Angeles,Truck Drivers,2018,41672.5
+Los Angeles,Truck Drivers,2019,41916.666666666664
+Los Angeles,Water and Wastewater ,2016,72915
+Los Angeles,Water and Wastewater ,2017,71860
+Los Angeles,Water and Wastewater ,2018,74825
+Los Angeles,Water and Wastewater ,2019,77920
+New York,Agricultrual & Fishing Workers,2016,29305
+New York,Agricultrual & Fishing Workers,2017,30207.14285714286
+New York,Agricultrual & Fishing Workers,2018,32991.25
+New York,Agricultrual & Fishing Workers,2019,35361.25
+New York,All Occupations,2016,60350
+New York,All Occupations,2017,61485
+New York,All Occupations,2018,63210
+New York,All Occupations,2019,65380
+New York,Bus Drivers,2016,46142.5
+New York,Bus Drivers,2017,49307.5
+New York,Bus Drivers,2018,50867.5
+New York,Bus Drivers,2019,61255
+New York,Cashiers,2016,31651.25
+New York,Cashiers,2017,31847.5
+New York,Cashiers,2018,33880
+New York,Cashiers,2019,NA
+New York,Childcare Workers,2016,27760
+New York,Childcare Workers,2017,28010
+New York,Childcare Workers,2018,28950
+New York,Childcare Workers,2019,29970
+New York,Construction Workers,2016,NA
+New York,Construction Workers,2017,NA
+New York,Construction Workers,2018,NA
+New York,Construction Workers,2019,61185
+New York,Cooks,2016,27577
+New York,Cooks,2017,28709
+New York,Cooks,2018,30529
+New York,Cooks,2019,33701.818181818184
+New York,counselors,2016,NA
+New York,counselors,2017,54408
+New York,counselors,2018,55231
+New York,counselors,2019,57776
+New York,Electricians,2016,66752.5
+New York,Electricians,2017,69625
+New York,Electricians,2018,69580
+New York,Electricians,2019,70550
+New York,Electricity,2016,80590
+New York,Electricity,2017,80698.18181818182
+New York,Electricity,2018,82732.72727272728
+New York,Electricity,2019,89315.45454545454
+New York,emergency associated worker,2016,35375
+New York,emergency associated worker,2017,38455
+New York,emergency associated worker,2018,40262.5
+New York,emergency associated worker,2019,39920
+New York,Ferry captains,2016,77120
+New York,Ferry captains,2017,91395
+New York,Ferry captains,2018,94805
+New York,Ferry captains,2019,90045
+New York,Food Preparation Workers,2016,24072.5
+New York,Food Preparation Workers,2017,25455
+New York,Food Preparation Workers,2018,27325
+New York,Food Preparation Workers,2019,29267.5
+New York,Food Processing Workers,2016,29223.125
+New York,Food Processing Workers,2017,30342.5
+New York,Food Processing Workers,2018,31253.75
+New York,Food Processing Workers,2019,32504.375
+New York,Lab technician,2016,53360
+New York,Lab technician,2017,52852.5
+New York,Lab technician,2018,53555
+New York,Lab technician,2019,54745
+New York,Machinists,2016,49180
+New York,Machinists,2017,49667.5
+New York,Machinists,2018,52150
+New York,Machinists,2019,52177.5
+New York,Nurses,2016,111130
+New York,Nurses,2017,115028
+New York,Nurses,2018,119389
+New York,Nurses,2019,134692.5
+New York,Nursing home workers,2016,NA
+New York,Nursing home workers,2017,33607.5
+New York,Nursing home workers,2018,35031.25
+New York,Nursing home workers,2019,39323.333333333336
+New York,Oil Natural Gas,2016,56260.90909090909
+New York,Oil Natural Gas,2017,61506
+New York,Oil Natural Gas,2018,60602.72727272727
+New York,Oil Natural Gas,2019,64688.181818181816
+New York,Plumbers,2016,66927.5
+New York,Plumbers,2017,69120
+New York,Plumbers,2018,67657.5
+New York,Plumbers,2019,66042.5
+New York,Postal Service & Delivery,2016,46206.666666666664
+New York,Postal Service & Delivery,2017,46206.666666666664
+New York,Postal Service & Delivery,2018,47720
+New York,Postal Service & Delivery,2019,52470
+New York,Servers,2016,26944
+New York,Servers,2017,28276
+New York,Servers,2018,30387
+New York,Servers,2019,33883.75
+New York,social workers,2016,61388.75
+New York,social workers,2017,62600
+New York,social workers,2018,64301.25
+New York,social workers,2019,64875
+New York,Subway and Streetcar Operators,2016,75480
+New York,Subway and Streetcar Operators,2017,72195
+New York,Subway and Streetcar Operators,2018,74850
+New York,Subway and Streetcar Operators,2019,77830
+New York,Taxi Drivers,2016,33090
+New York,Taxi Drivers,2017,34280
+New York,Taxi Drivers,2018,34575
+New York,"Teachers, except secondary school",2016,74040
+New York,"Teachers, except secondary school",2017,76684.73684210527
+New York,"Teachers, except secondary school",2018,79825.26315789473
+New York,"Teachers, except secondary school",2019,81317
+New York,Transportation Engineers,2016,61293.63636363636
+New York,Transportation Engineers,2017,64801.42857142857
+New York,Transportation Engineers,2018,66282
+New York,Transportation Engineers,2019,NA
+New York,Truck Drivers,2016,38860
+New York,Truck Drivers,2017,39080
+New York,Truck Drivers,2018,41177.5
+New York,Truck Drivers,2019,42231.666666666664
+New York,Water and Wastewater ,2016,58260
+New York,Water and Wastewater ,2017,58755
+New York,Water and Wastewater ,2018,63120
+New York,Water and Wastewater ,2019,65760
+Seattle,Agricultrual & Fishing Workers,2016,32393.333333333332
+Seattle,Agricultrual & Fishing Workers,2017,35530
+Seattle,Agricultrual & Fishing Workers,2018,35257
+Seattle,Agricultrual & Fishing Workers,2019,35424
+Seattle,All Occupations,2016,58490
+Seattle,All Occupations,2017,60300
+Seattle,All Occupations,2018,62405
+Seattle,All Occupations,2019,65240
+Seattle,Bus Drivers,2016,48165
+Seattle,Bus Drivers,2017,49687.5
+Seattle,Bus Drivers,2018,52440
+Seattle,Bus Drivers,2019,59765
+Seattle,Cashiers,2016,31377.5
+Seattle,Cashiers,2017,31540
+Seattle,Cashiers,2018,34426.25
+Seattle,Cashiers,2019,35947.5
+Seattle,Childcare Workers,2016,26095
+Seattle,Childcare Workers,2017,28340
+Seattle,Childcare Workers,2018,30210
+Seattle,Childcare Workers,2019,32120
+Seattle,Construction Workers,2016,51599.444444444445
+Seattle,Construction Workers,2017,55029.444444444445
+Seattle,Construction Workers,2018,54373.88888888889
+Seattle,Construction Workers,2019,NA
+Seattle,Cooks,2016,30121
+Seattle,Cooks,2017,32133
+Seattle,Cooks,2018,33547
+Seattle,Cooks,2019,37091
+Seattle,counselors,2016,49180
+Seattle,counselors,2017,49834
+Seattle,counselors,2018,53431
+Seattle,counselors,2019,54590
+Seattle,Electricians,2016,69582.5
+Seattle,Electricians,2017,69435
+Seattle,Electricians,2018,72712.5
+Seattle,Electricians,2019,74830
+Seattle,Electricity,2016,82165.45454545454
+Seattle,Electricity,2017,81811
+Seattle,Electricity,2018,84859
+Seattle,Electricity,2019,87777.27272727272
+Seattle,emergency associated worker,2016,49275
+Seattle,emergency associated worker,2017,58896.666666666664
+Seattle,emergency associated worker,2018,50117.5
+Seattle,emergency associated worker,2019,48110
+Seattle,Ferry captains,2016,84305
+Seattle,Ferry captains,2017,98450
+Seattle,Ferry captains,2018,92170
+Seattle,Ferry captains,2019,99800
+Seattle,Food Preparation Workers,2016,26415
+Seattle,Food Preparation Workers,2017,28632.5
+Seattle,Food Preparation Workers,2018,29477.5
+Seattle,Food Preparation Workers,2019,31352.5
+Seattle,Food Processing Workers,2016,32323.125
+Seattle,Food Processing Workers,2017,33736.25
+Seattle,Food Processing Workers,2018,35139.375
+Seattle,Food Processing Workers,2019,36100.625
+Seattle,Lab technician,2016,56206.666666666664
+Seattle,Lab technician,2017,52982.5
+Seattle,Lab technician,2018,53032.5
+Seattle,Lab technician,2019,54280
+Seattle,Machinists,2016,51462.5
+Seattle,Machinists,2017,53285
+Seattle,Machinists,2018,54442.5
+Seattle,Machinists,2019,56237.5
+Seattle,Nurses,2016,114407
+Seattle,Nurses,2017,119050
+Seattle,Nurses,2018,118456.66666666667
+Seattle,Nurses,2019,129250
+Seattle,Nursing home workers,2016,29402.5
+Seattle,Nursing home workers,2017,30606.25
+Seattle,Nursing home workers,2018,32953.75
+Seattle,Nursing home workers,2019,34642
+Seattle,Oil Natural Gas,2016,NA
+Seattle,Oil Natural Gas,2017,56248.333333333336
+Seattle,Oil Natural Gas,2018,66981.25
+Seattle,Oil Natural Gas,2019,68876.25
+Seattle,Plumbers,2016,64507.5
+Seattle,Plumbers,2017,67457.5
+Seattle,Plumbers,2018,67655
+Seattle,Plumbers,2019,72292.5
+Seattle,Postal Service & Delivery,2016,47348.333333333336
+Seattle,Postal Service & Delivery,2017,47233.333333333336
+Seattle,Postal Service & Delivery,2018,48910
+Seattle,Postal Service & Delivery,2019,52900
+Seattle,Servers,2016,28060
+Seattle,Servers,2017,29930
+Seattle,Servers,2018,31765
+Seattle,Servers,2019,35148.75
+Seattle,social workers,2016,58343.75
+Seattle,social workers,2017,59920
+Seattle,social workers,2018,61601.25
+Seattle,social workers,2019,63442.5
+Seattle,Subway and Streetcar Operators,2017,66910
+Seattle,Taxi Drivers,2016,27520
+Seattle,Taxi Drivers,2017,30320
+Seattle,Taxi Drivers,2018,35210
+Seattle,"Teachers, except secondary school",2016,58292
+Seattle,"Teachers, except secondary school",2017,59898
+Seattle,"Teachers, except secondary school",2018,62167
+Seattle,"Teachers, except secondary school",2019,65779
+Seattle,Transportation Engineers,2016,NA
+Seattle,Transportation Engineers,2017,NA
+Seattle,Transportation Engineers,2018,68640
+Seattle,Transportation Engineers,2019,72610.41666666667
+Seattle,Truck Drivers,2016,39197.5
+Seattle,Truck Drivers,2017,40147.5
+Seattle,Truck Drivers,2018,41315
+Seattle,Truck Drivers,2019,43535
+Seattle,Water and Wastewater ,2016,64950
+Seattle,Water and Wastewater ,2017,63655
+Seattle,Water and Wastewater ,2018,65060
+Seattle,Water and Wastewater ,2019,68030
+U.S.,Agricultrual & Fishing Workers,2016,NA
+U.S.,Agricultrual & Fishing Workers,2017,NA
+U.S.,Agricultrual & Fishing Workers,2018,NA
+U.S.,Agricultrual & Fishing Workers,2019,NA
+U.S.,All Occupations,2016,56333.333333333336
+U.S.,All Occupations,2017,57510
+U.S.,All Occupations,2018,58913.333333333336
+U.S.,All Occupations,2019,55548.79385964912
+U.S.,Bus Drivers,2016,NA
+U.S.,Bus Drivers,2017,NA
+U.S.,Bus Drivers,2018,33781.5
+U.S.,Bus Drivers,2019,38456.6265060241
+U.S.,Cashiers,2016,NA
+U.S.,Cashiers,2017,NA
+U.S.,Cashiers,2018,NA
+U.S.,Cashiers,2019,NA
+U.S.,Childcare Workers,2016,NA
+U.S.,Childcare Workers,2017,NA
+U.S.,Childcare Workers,2018,26676.11510791367
+U.S.,Childcare Workers,2019,NA
+U.S.,Construction Workers,2016,NA
+U.S.,Construction Workers,2017,NA
+U.S.,Construction Workers,2018,NA
+U.S.,Construction Workers,2019,NA
+U.S.,Cooks,2016,NA
+U.S.,Cooks,2017,NA
+U.S.,Cooks,2018,NA
+U.S.,Cooks,2019,NA
+U.S.,counselors,2016,NA
+U.S.,counselors,2017,NA
+U.S.,counselors,2018,NA
+U.S.,counselors,2019,NA
+U.S.,Electricians,2016,NA
+U.S.,Electricians,2017,NA
+U.S.,Electricians,2018,NA
+U.S.,Electricians,2019,NA
+U.S.,Electricity,2016,NA
+U.S.,Electricity,2017,NA
+U.S.,Electricity,2018,NA
+U.S.,Electricity,2019,NA
+U.S.,emergency associated worker,2016,NA
+U.S.,emergency associated worker,2017,NA
+U.S.,emergency associated worker,2018,NA
+U.S.,emergency associated worker,2019,NA
+U.S.,Ferry captains,2016,74237.02702702703
+U.S.,Ferry captains,2017,73223.88888888889
+U.S.,Ferry captains,2018,NA
+U.S.,Ferry captains,2019,NA
+U.S.,Food Preparation Workers,2016,NA
+U.S.,Food Preparation Workers,2017,NA
+U.S.,Food Preparation Workers,2018,NA
+U.S.,Food Preparation Workers,2019,NA
+U.S.,Food Processing Workers,2016,NA
+U.S.,Food Processing Workers,2017,NA
+U.S.,Food Processing Workers,2018,NA
+U.S.,Food Processing Workers,2019,NA
+U.S.,Lab technician,2016,NA
+U.S.,Lab technician,2017,NA
+U.S.,Lab technician,2018,NA
+U.S.,Lab technician,2019,NA
+U.S.,Machinists,2016,NA
+U.S.,Machinists,2017,NA
+U.S.,Machinists,2018,NA
+U.S.,Machinists,2019,NA
+U.S.,Nurses,2016,NA
+U.S.,Nurses,2017,NA
+U.S.,Nurses,2018,NA
+U.S.,Nurses,2019,NA
+U.S.,Nursing home workers,2016,NA
+U.S.,Nursing home workers,2017,NA
+U.S.,Nursing home workers,2018,NA
+U.S.,Nursing home workers,2019,NA
+U.S.,Oil Natural Gas,2016,NA
+U.S.,Oil Natural Gas,2017,NA
+U.S.,Oil Natural Gas,2018,NA
+U.S.,Oil Natural Gas,2019,NA
+U.S.,Plumbers,2016,NA
+U.S.,Plumbers,2017,NA
+U.S.,Plumbers,2018,NA
+U.S.,Plumbers,2019,NA
+U.S.,Postal Service & Delivery,2016,NA
+U.S.,Postal Service & Delivery,2017,NA
+U.S.,Postal Service & Delivery,2018,NA
+U.S.,Postal Service & Delivery,2019,51689.166666666664
+U.S.,Servers,2016,NA
+U.S.,Servers,2017,NA
+U.S.,Servers,2018,NA
+U.S.,Servers,2019,NA
+U.S.,social workers,2016,NA
+U.S.,social workers,2017,NA
+U.S.,social workers,2018,NA
+U.S.,social workers,2019,55205.802139037434
+U.S.,Subway and Streetcar Operators,2016,54075
+U.S.,Subway and Streetcar Operators,2017,55272.5
+U.S.,Subway and Streetcar Operators,2018,49964.76190476191
+U.S.,Subway and Streetcar Operators,2019,52408.42105263158
+U.S.,Taxi Drivers,2016,NA
+U.S.,Taxi Drivers,2017,NA
+U.S.,Taxi Drivers,2018,NA
+U.S.,"Teachers, except secondary school",2016,NA
+U.S.,"Teachers, except secondary school",2017,NA
+U.S.,"Teachers, except secondary school",2018,NA
+U.S.,"Teachers, except secondary school",2019,NA
+U.S.,Transportation Engineers,2016,NA
+U.S.,Transportation Engineers,2017,NA
+U.S.,Transportation Engineers,2018,NA
+U.S.,Transportation Engineers,2019,NA
+U.S.,Truck Drivers,2016,NA
+U.S.,Truck Drivers,2017,NA
+U.S.,Truck Drivers,2018,NA
+U.S.,Truck Drivers,2019,NA
+U.S.,Water and Wastewater ,2016,48934.661016949154
+U.S.,Water and Wastewater ,2017,49224.38461538462
+U.S.,Water and Wastewater ,2018,NA
+U.S.,Water and Wastewater ,2019,51065.76271186441
