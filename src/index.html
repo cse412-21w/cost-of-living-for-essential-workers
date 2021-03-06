@@ -1,343 +1,408 @@
-<!DOCTYPE HTML>
-<html lang="en">
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Cost of Living for Essential Workers</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<head>
-  <meta charset="utf-8">
-  <title>CSE 412 Project Demo</title>
-  <link rel="stylesheet" href="/style.css">
-  <script>
-    // nav bar behavior
-    function openNav() {
-      document.getElementById("mySidenav").style.width = "250px";
-      document.getElementById("main").style.marginLeft = "250px";
-    }
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/fontAwesome.css">
+        <link rel="stylesheet" href="css/hero-slider.css">
+        <link rel="stylesheet" href="css/templatemo-main.css">
+        <link rel="stylesheet" href="css/owl-carousel.css">
 
-    function closeNav() {
-      document.getElementById("mySidenav").style.width = "0";
-      document.getElementById("main").style.marginLeft = "0";
-    }
-  </script>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <!-- For using d3 -->
-  <script src="https://d3js.org/d3.v6.min.js"></script>
-  <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
-  <!-- For using vega-lite -->
-  <script src="https://cdn.jsdelivr.net/npm/vega"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vega-lite"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vega-lite-api"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vega-tooltip"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,900;1,400;1,900&display=swap"
-    rel="stylesheet">
-</head>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+<!--
+Vanilla Template
+https://templatemo.com/tm-526-vanilla
+-->
 <body>
 
-  <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="#">Intro</a>
-    <a href="#">National Hourly Wage</a>
-    <a href="#">Major Cities Annual Income</a>
-    <a href="#">Income By Occupation</a>
-    <a href="#">Cost of Living</a>
-    <a href="#">About Us</a>
-  </div>
-
-  <main class="main" id="main">
-
-    <section class="title" id="title">
-      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
-      <a href="https://github.com/cse412-21w/cost-of-living-for-essential-workers">Cost of Living For Essential
-        Workers</a>
-    </section>
-    <section id="overview">
-      <h1>Final Project</h1>
-      <p>
-        As the pandemic has shown, many workers essential to the functioning of cities are also some
-        of our lowest paid. This interactive visualization design project intends to demonstrate how
-        difficult it is to live as an essential worker in major U.S. cities to build a case for
-        increasing the minimum wage.
-      </p>
-    </section>
-
-    <section id="story">
-      <h1>
-        Intro
-      </h1>
-      <p>
-        Steve lives in seattle, Washington.
-      </p>
-      <p>
-        He works as a cahsier 40 hours a week at a grocery store in downtown seattle. With this job, he is able
-        to make $14.34 dollars per hour.
-      </p>
-      <p>
-        Living in Seattle costs quite a lot. Steve is currently living in an apartment in the capital hill area,
-        which costs him $xx dollars every month excluding untility fees. On average, he spends $xx dollars on food
-        and $xx on transportation each month.
-      </p>
-      <p>
-        There are approximately xxx people in the U.S. who are essential workers like Steve. While they play important
-        roles
-        in the society, their lifes are tough.
-      </p>
-      <p>
-        (*data to be filled in)
-      </p>
-      <div class='tableauPlaceholder' id='viz1614848561430' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;in&#47;introstory&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='introstory&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;in&#47;introstory&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1614848561430');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1200px';vizElement.style.height='657px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1200px';vizElement.style.height='657px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-    </section>
-
-    <section id="nationalview">
-      <h1>Average Hourly Income Per Capital:</h1>
-       
-      <div class='tableauPlaceholder' id='viz1614848702441' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;na&#47;nationalview&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='nationalview&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;na&#47;nationalview&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1614848702441');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1024px';vizElement.style.height='795px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1024px';vizElement.style.height='795px';} else { vizElement.style.width='100%';vizElement.style.height='1177px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-      <p>
-        *average hourly income calculated by assuming on average, each person works 40 hours per week with 52 weeks per year. 
-      </p>
-      <p>
-        (features to be added: when a county is clicked on the map, the graph on the right shows a the average hourly income per capita
-        for each year)
-      </p>
-
-    </section>
-
-    <section id = "transition">
-      <p>
-        In 2019, the U.S. national median annual income is $xxx. The median of the essential workers is $xxx.
-        About xx% of the U.S. population works as an essential worker. (some overall information presented with 
-        small and simply visualizations)
-      </p>
-      <p>
-        (scroll down to see a closer analysis for the life of essential workers in five of the major cities)
-      </p>
-    </section>
-
-    <section id="annualWage">
-      <h1>Median Annual Wage in Major Cities:</h1>
-      <div class='tableauPlaceholder' id='viz1614293267369' style='position: relative'>
-        <noscript>
-          <a href='#'>
-            <img alt=' '
-              src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Prototype-Wagebyocc&#47;AnnualwagebycityOcc&#47;1_rss.png'
-              style='border: none' />
-          </a>
-        </noscript>
-        <object class='tableauViz' style='display:none;'>
-          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-          <param name='embed_code_version' value='3' />
-          <param name='site_root' value='' />
-          <param name='name' value='Prototype-Wagebyocc&#47;AnnualwagebycityOcc' />
-          <param name='tabs' value='no' />
-          <param name='toolbar' value='yes' />
-          <param name='static_image'
-            value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Prototype-        Wagebyocc&#47;AnnualwagebycityOcc&#47;1.png' />
-          <param name='animate_transition' value='yes' />
-          <param name='display_static_image' value='yes' />
-          <param name='display_spinner' value='yes' />
-          <param name='display_overlay' value='yes' />
-          <param name='display_count' value='yes' />
-          <param name='language' value='en' />
-          <param name='filter' value='publish=yes' />
-        </object>
-      </div>
-      <script type='text/javascript'>
-        var divElement = document.getElementById('viz1614293267369');
-        var vizElement = divElement.getElementsByTagName('object')[0];
-        if (divElement.offsetWidth > 800) { vizElement.style.width = '1366px'; vizElement.style.height = '795px'; }
-        else if (divElement.offsetWidth > 500) { vizElement.style.width = '1366px'; vizElement.style.height = '795px'; }
-        else { vizElement.style.width = '100%'; vizElement.style.height = '877px'; }
-        var scriptElement = document.createElement('script');
-        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-        vizElement.parentNode.insertBefore(scriptElement, vizElement);
-      </script>
-    </section>
-
-    <section id="costOfLivingIndexExplanation">
-      <h1>Cost of Living Index in Major U.S. Cities</h1>
-      <p>
-        Cost of living is a metric of the prices needed to cover basic 
-        expenses, and is often used to compared how expensive it is to live in 
-        one city compared to the other. A person living in a city with a 
-        higher cost of living will require more money to afford the exact same 
-        lifestyle as someone in a city with a lower cost of living. 
-      </p>
-      <p>
-        A cost of living index is a number representing the relative price 
-        levels for consumer goods and services. While many such indexes exist, 
-        the <a href="https://www.census.gov/library/publications/2011/compendia/statab/131ed/prices.html">Cost of Living Index</a> 
-        compiled by the American Chamber of Commerce Researchers Association 
-        (ACCRA) and the Council for Community and Economic Research (C2ER) is 
-        one of the most widely accepted in the United States. It uses the 
-        average cost of living for all participaing areas, both metropolitan 
-        and nonmetropolitan, for the index of 100. Thus the index is read as a 
-        percentage of the average for all places. 
-      </p>
-      <p>
-        The composite Cost of Living Index is the weighted average of the index 
-        calculated in different categories, such as housing and groceries. 
-      </p>
-    </section>
-
-    <section id="costOfLivingIndexVisualization">
-      <div class='tableauPlaceholder' id='viz1614310854391' style='position: relative'>
-        <noscript>
-          <a href='#'>
-            <img alt=' '
-              src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CO&#47;COL_index_visualizations&#47;Dashboard1&#47;1_rss.png'
-              style='border: none' />
-          </a>
-        </noscript>
-        <object class='tableauViz' style='display:none;'>
-          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-          <param name='embed_code_version' value='3' />
-          <param name='site_root' value='' />
-          <param name='name' value='COL_index_visualizations&#47;Dashboard1' />
-          <param name='tabs' value='no' />
-          <param name='toolbar' value='yes' />
-          <param name='static_image'
-            value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CO&#47;COL_index_visualizations&#47;Dashboard1&#47;1.png' />
-          <param name='animate_transition' value='yes' />
-          <param name='display_static_image' value='yes' />
-          <param name='display_spinner' value='yes' />
-          <param name='display_overlay' value='yes' />
-          <param name='display_count' value='yes' />
-          <param name='language' value='en' />
-          <param name='filter' value='publish=yes' />
-        </object>
-      </div>
-      <script type='text/javascript'>
-        var divElement = document.getElementById('viz1614310854391');
-        var vizElement = divElement.getElementsByTagName('object')[0];
-        if (divElement.offsetWidth > 800) { vizElement.style.width = '1000px'; vizElement.style.height = '827px'; }
-        else if (divElement.offsetWidth > 500) { vizElement.style.width = '1000px'; vizElement.style.height = '827px'; }
-        else { vizElement.style.width = '100%'; vizElement.style.height = '827px'; }
-        var scriptElement = document.createElement('script');
-        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-        vizElement.parentNode.insertBefore(scriptElement, vizElement);
-      </script>
-    </section>
-
-
-    <section id="aboutUs">
-      <h1>About us</h1>
-      <h2>Our Mission</h2>
-      <p>
-        It is never easy to make a living in a city, especially for those essential workers who are trying to settle
-        down in those major cities in the United States. Moreover, since the pandemic occurred, some of the lowest paid
-        in the cities have also experienced a heavy financial impact under the lockdown policy and economic regression.
-        Therefore, by taking a further exploration into the wages and living expenditures of some essential occupations
-        with relatively lower income, we are trying to find out where their living pressure is mostly coming from, and
-        finally come up with individual or governmental advice to help dealing with their problems and improving their
-        life quality. Hopefully, we would also like to make comparisons highlighting the impact of pandemic on essential
-        workers if supported by the latest data.
-      </p>
-      <h2>Our Design</h2>
-      <p>
-        In this project, we picked five major cities for further exploration: Seattle(Northwest), Los
-        Angeles(Southwest), Chicago(Central North), Dallas(Central South), and New York(East). The geographic span of
-        the five major cities almost covers the whole territory of the US. Also, each city has unique features in its
-        culture, politics, economic condition and so on, so that it is worth comparing. Therefore, we are having these
-        five cities as representatives in our analysis.
-
-      </p>
-      <h2>Our page occurs in three sections</h2>
-      <ul>
-        <li>
-          We first begin with a story from the perspective of an American citizen who would like to choose an occupation
-          to earn money and a city to live in. The introduction in the form of story-telling can give the viewers a
-          realistic feeling and lead them to go through the upcoming exploration process. Then we make a nationwide
-          analysis on the average hourly income to show the wage distribution.
-        </li>
-        <li>
-          Afterwards, we highlight the each selected city on the clickable map to show its median annual wage by giving
-          visualizations of its trend through years and breakdown in different occupation categories. To make a more
-          contrast and vivid visualization, we also use a bar chart to compare the annual income for each occupation.
-          The viewers can play with the filter to change the year or occupation through the bar and the drop-down list.
-
-        </li>
-        <li>
-          Next, we break down the cost of living into a pie chart to show the proportion of each category in the total
-          life expenditure. We also use bar chart to compare the cost of living index between cities. We would like to
-          link the median annual wages we get from the last graphs to plug into the cost-of-living chart to see if the
-          basic life expenditure can be covered or not.
-
-        </li>
-      </ul>
-
-      <h2>Our Data</h2>
-      <ol>
-        <li>
-          Bureau of Economic Analysis: https://www.bea.gov/data/income-saving
-        </li>
-        <li>
-          Wages of different occupations in Seattle: https://data.wa.gov
-
-        </li>
-        <li>
-          US Census: Cost of Living https://www.census.gov/library/publications/2011/compendia/statab/131ed/prices.html
-
-        </li>
-        <li>
-          US Bureau of labor statistics: https://www.bls.gov/
-
-        </li>
-        <li>
-          U.S bureau of labor force: https://www.bls.gov/bls
-
-        </li>
-      </ol>
-
-      <div id="teammates">
-        <h2>Our Team</h2>
-        <ul style="list-style-type:none">
-          <li>Ellen Zhu</li>
-          <li>Email: czhu22@uw.edu</li>
-          <li>Github: https://github.com/ChenyuanZhu</li>
+    <div class="fixed-side-navbar">
+        <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#home"><span>HOME</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#intro"><span>Intro</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#national-hourly-wage"><span>National Hourly Wage</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#major-cities-annual-income"><span>Major Cities Annual Income</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#cost-of-living"><span>Cost of Living</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#insight"><span>Insight</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#about-us"><span>About us</span></a></li>
         </ul>
-
-        <ul style="list-style-type:none">
-          <li>Xuling Yang</li>
-          <li>Email: xuliny@uw.edu</li>
-          <li>Github: https://github.com/xuliny-1834826</li>
-        </ul>
-
-        <ul style="list-style-type:none">
-          <li>Grant Yang</li>
-          <li>Email: ley5@uw.edu</li>
-          <li>Github: https://github.com/Gyangle</li>
-        </ul>
-
-        <ul style="list-style-type:none">
-          <li>Jueyao Liu</li>
-          <li>
-            Email: jueyao99@uw.edu</li>
-          <li>Github: https://github.com/jueyao</li>
-        </ul>
-
-        <ul style="list-style-type:none">
-          <li>Tingting Yang</li>
-          <li>
-            Email: tingty@uw.edu</li>
-          <li>Github: https://github.com/MariaTYang</li>
-        </ul>
-
-      </div>
-
-
-    </section>
-
-    <div class="footer">
-      <a href="https://courses.cs.washington.edu/courses/cse412/21wi/">CSE 412 Data Visualization</a>
-      <a href="http://www.washington.edu">University of Washington</a>
     </div>
 
+    <div class="parallax-content baner-content" id="home">
+        <div class="container">
+            <div class="first-content">
+                <h1>Cost of Living</h1>
+                <span><em>for</em> essential workers</span>
+                <div class="primary-button">
+                    <a href="https://github.com/cse412-21w/cost-of-living-for-essential-workers">GitHub Page</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <!-- it is recommended to put js files before </body> -->
-    <!-- or check load event fot addEventListener() if you want to put js in the <head> -->
-    <script src="d3Demo.js"></script>
-    <script src="vegaDemo.js"></script>
-    <script src="nationalview.js"></script>
-  </main>
+    <div id="intro" >
+        <div class="container">
+            <p id="first-pargraph">
+                As the pandemic has shown, many workers essential to the functioning of cities are also some
+                of our lowest paid. This interactive visualization design project intends to demonstrate how
+                difficult it is to live as an essential worker in major U.S. cities to build a case for
+                increasing the minimum wage.
+            </p>
+            <hr>
+              <div class='tableauPlaceholder' id='viz1614848561430' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;in&#47;introstory&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='introstory&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;in&#47;introstory&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1614848561430');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1200px';vizElement.style.height='657px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1200px';vizElement.style.height='657px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+            </div>
+            <p></p>
+            <hr>
+    </div>
+
+    <div id="national-hourly-wage">
+        <div class="container">
+            <p></p>
+            <h2>Average Hourly Income Per Capital</h2>
+
+            <div class='tableauPlaceholder'  margin-bottom=0px margi id='viz1614848702441' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;na&#47;nationalview&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='nationalview&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;na&#47;nationalview&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1614848702441');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1024px';vizElement.style.height='795px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1024px';vizElement.style.height='795px';} else { vizElement.style.width='100%';vizElement.style.height='1177px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+            <p></p>
+
+        </div>
+        
+    </div>
+
+    <div>
+        <div class="container">            
+            <p>
+              *Average hourly income calculated by assuming on average, each person works 40 hours per week with 52 weeks per year. 
+            </p>
+            <p>
+              (features to be added: when a county is clicked on the map, the graph on the right shows a the average hourly income per capita
+              for each year)
+            </p>
+            <!-- spacing -->
+            <p></p>
+            <hr>
+            <p></p></div>
+
+    </div>
+
+    <div>
+        <div class="container">
+            <p></p>
+            <h2>Median Annual Wage in Major Cities</h2>
+            <p>
+            In 2019, the U.S. national median annual income is $xxx. The median of the essential workers is $xxx.
+            About xx% of the U.S. population works as an essential worker. (some overall information presented with 
+            small and simply visualizations)
+            </p>
+            <p>
+            (scroll down to see a closer analysis for the life of essential workers in five of the major cities)
+            </p>
+        </div>
+
+      </div>
+
+    <div class="tabs-content" id="major-cities-annual-income">
+        <div class="container">
+
+            <div class='tableauPlaceholder' id='viz1614293267369' style='position: relative'>
+                <noscript>
+                <a href='#'>
+                    <img alt=' '
+                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Prototype-Wagebyocc&#47;AnnualwagebycityOcc&#47;1_rss.png'
+                    style='border: none' />
+                </a>
+                </noscript>
+                <object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='Prototype-Wagebyocc&#47;AnnualwagebycityOcc' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image'
+                    value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Prototype-        Wagebyocc&#47;AnnualwagebycityOcc&#47;1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+                <param name='language' value='en' />
+                <param name='filter' value='publish=yes' />
+                </object>
+            </div>
+            <script type='text/javascript'>
+                var divElement = document.getElementById('viz1614293267369');
+                var vizElement = divElement.getElementsByTagName('object')[0];
+                if (divElement.offsetWidth > 800) { vizElement.style.width = '1366px'; vizElement.style.height = '795px'; }
+                else if (divElement.offsetWidth > 500) { vizElement.style.width = '1366px'; vizElement.style.height = '795px'; }
+                else { vizElement.style.width = '100%'; vizElement.style.height = '877px'; }
+                var scriptElement = document.createElement('script');
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                vizElement.parentNode.insertBefore(scriptElement, vizElement);
+            </script>
+        </div>
+    </div>
+    
+    <div>
+        <div class="container">
+            <p></p>
+            <hr>
+            <p></p>
+            <h2>Cost of Living Index in Major U.S. Cities</h2>
+            <p>
+            Cost of living is a metric of the prices needed to cover basic 
+            expenses, and is often used to compared how expensive it is to live in 
+            one city compared to the other. A person living in a city with a 
+            higher cost of living will require more money to afford the exact same 
+            lifestyle as someone in a city with a lower cost of living. 
+            </p>
+            <p>
+            A cost of living index is a number representing the relative price 
+            levels for consumer goods and services. While many such indexes exist, 
+            the <a href="https://www.census.gov/library/publications/2011/compendia/statab/131ed/prices.html">Cost of Living Index</a> 
+            compiled by the American Chamber of Commerce Researchers Association 
+            (ACCRA) and the Council for Community and Economic Research (C2ER) is 
+            one of the most widely accepted in the United States. It uses the 
+            average cost of living for all participaing areas, both metropolitan 
+            and nonmetropolitan, for the index of 100. Thus the index is read as a 
+            percentage of the average for all places. 
+            </p>
+            <p>
+            The composite Cost of Living Index is the weighted average of the index 
+            calculated in different categories, such as housing and groceries. 
+            </p>
+        </div>
+        
+    </div>
+
+    <div class="service-content" id="cost-of-living">
+        <div id="container">
+            <div class='tableauPlaceholder' id='viz1614310854391' style='position: relative'>
+                <noscript>
+                  <a href='#'>
+                    <img alt=' '
+                      src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CO&#47;COL_index_visualizations&#47;Dashboard1&#47;1_rss.png'
+                      style='border: none' />
+                  </a>
+                </noscript>
+                <object class='tableauViz' style='display:none;'>
+                  <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                  <param name='embed_code_version' value='3' />
+                  <param name='site_root' value='' />
+                  <param name='name' value='COL_index_visualizations&#47;Dashboard1' />
+                  <param name='tabs' value='no' />
+                  <param name='toolbar' value='yes' />
+                  <param name='static_image'
+                    value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CO&#47;COL_index_visualizations&#47;Dashboard1&#47;1.png' />
+                  <param name='animate_transition' value='yes' />
+                  <param name='display_static_image' value='yes' />
+                  <param name='display_spinner' value='yes' />
+                  <param name='display_overlay' value='yes' />
+                  <param name='display_count' value='yes' />
+                  <param name='language' value='en' />
+                  <param name='filter' value='publish=yes' />
+                </object>
+              </div>
+              <script type='text/javascript'>
+                var divElement = document.getElementById('viz1614310854391');
+                var vizElement = divElement.getElementsByTagName('object')[0];
+                if (divElement.offsetWidth > 800) { vizElement.style.width = '1000px'; vizElement.style.height = '827px'; }
+                else if (divElement.offsetWidth > 500) { vizElement.style.width = '1000px'; vizElement.style.height = '827px'; }
+                else { vizElement.style.width = '100%'; vizElement.style.height = '827px'; }
+                var scriptElement = document.createElement('script');
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                vizElement.parentNode.insertBefore(scriptElement, vizElement);
+              </script>
+        </div>
+    </div>
+
+    <div class="contact-content" id="insight">
+        <div class="container">
+            <h2>Insight</h2>
+            <p>asdasdasdasdqwfwefqefq</p>
+            <p>asdasdasdasdqwfwefqefq</p>
+            <p>asdasdasdasdqwfwefqefq</p>
+        </div>
+    </div>
+
+    <div class="service-content" id="about-us">
+        <div class="container">
+            <h2>About us</h2>
+            <h3>Our Mission</h3>
+            <hr>
+            <p>
+              It is never easy to make a living in a city, especially for those essential workers who are trying to settle
+              down in those major cities in the United States. Moreover, since the pandemic occurred, some of the lowest paid
+              in the cities have also experienced a heavy financial impact under the lockdown policy and economic regression.
+              Therefore, by taking a further exploration into the wages and living expenditures of some essential occupations
+              with relatively lower income, we are trying to find out where their living pressure is mostly coming from, and
+              finally come up with individual or governmental advice to help dealing with their problems and improving their
+              life quality. Hopefully, we would also like to make comparisons highlighting the impact of pandemic on essential
+              workers if supported by the latest data.
+            </p>
+            <h3>Our Design</h3>
+            <hr>
+            <p>
+              In this project, we picked five major cities for further exploration: <b>Seattle(Northwest)</b>, <b>Los
+              Angeles(Southwest)</b>, <b>Chicago(Central North)</b>, <b>Dallas(Central South)</b>, and <b>New York(North East)</b>. The geographic span of
+              the five major cities almost covers the whole territory of the US. Also, each city has unique features in its
+              culture, politics, economic condition and so on, so that it is worth comparing. Therefore, we are having these
+              five cities as representatives in our analysis.
+      
+            </p>
+            <h3>Our page occurs in three sections</h3>
+            <hr>
+            <ul>
+              <li>
+                We first begin with a story from the perspective of an American citizen who would like to choose an occupation
+                to earn money and a city to live in. The introduction in the form of story-telling can give the viewers a
+                realistic feeling and lead them to go through the upcoming exploration process. Then we make a nationwide
+                analysis on the average hourly income to show the wage distribution.
+              </li>
+              <li>
+                Afterwards, we highlight the each selected city on the clickable map to show its median annual wage by giving
+                visualizations of its trend through years and breakdown in different occupation categories. To make a more
+                contrast and vivid visualization, we also use a bar chart to compare the annual income for each occupation.
+                The viewers can play with the filter to change the year or occupation through the bar and the drop-down list.
+      
+              </li>
+              <li>
+                Next, we break down the cost of living into a pie chart to show the proportion of each category in the total
+                life expenditure. We also use bar chart to compare the cost of living index between cities. We would like to
+                link the median annual wages we get from the last graphs to plug into the cost-of-living chart to see if the
+                basic life expenditure can be covered or not.
+      
+              </li>
+            </ul>
+      
+            <h3>Our Data</h3>
+            <hr>
+            <ol>
+              <li>
+                Bureau of Economic Analysis: https://www.bea.gov/data/income-saving
+              </li>
+              <li>
+                Wages of different occupations in Seattle: https://data.wa.gov
+      
+              </li>
+              <li>
+                US Census: Cost of Living https://www.census.gov/library/publications/2011/compendia/statab/131ed/prices.html
+      
+              </li>
+              <li>
+                US Bureau of labor statistics: https://www.bls.gov/
+      
+              </li>
+              <li>
+                U.S bureau of labor force: https://www.bls.gov/bls
+      
+              </li>
+            </ol>
+      
+            <div id="teammates">
+              <h3>Our Team</h3>
+              <hr>
+              <ul style="list-style-type:none">
+                <li>Ellen Zhu</li>
+                <li>Email: czhu22@uw.edu</li>
+                <li>Github: https://github.com/ChenyuanZhu</li>
+              </ul>
+      
+              <ul style="list-style-type:none">
+                <li>Xuling Yang</li>
+                <li>Email: xuliny@uw.edu</li>
+                <li>Github: https://github.com/xuliny-1834826</li>
+              </ul>
+        
+              <ul style="list-style-type:none">
+                <li>Grant Yang</li>
+                <li>Email: ley5@uw.edu</li>
+                <li>Github: https://github.com/Gyangle</li>
+              </ul>
+      
+              <ul style="list-style-type:none">
+                <li>Jueyao Liu</li>
+                <li>
+                  Email: jueyao99@uw.edu</li>
+                <li>Github: https://github.com/jueyao</li>
+              </ul>
+      
+              <ul style="list-style-type:none">
+                <li>Tingting Yang</li>
+                <li>
+                  Email: tingty@uw.edu</li>
+                <li>Github: https://github.com/MariaTYang</li>
+              </ul>
+      
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="primary-button">
+                        <a href="#home">Back To Top</a>
+                    </div>
+                    <div class="footer">
+                        <a href="https://courses.cs.washington.edu/courses/cse412/21wi/">CSE 412 Data Visualization</a>
+                        <a href="http://www.washington.edu">University of Washington</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        function openCity(cityName) {
+            var i;
+            var x = document.getElementsByClassName("city");
+            for (i = 0; i < x.length; i++) {
+               x[i].style.display = "none";  
+            }
+            document.getElementById(cityName).style.display = "block";  
+        }
+    </script>
+
+    <script>
+        $(document).ready(function(){
+          // Add smooth scrolling to all links
+          $(".fixed-side-navbar a, .primary-button a").on('click', function(event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+
+              // Store hash
+              var hash = this.hash;
+
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+           
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            } // End if
+          });
+        });
+    </script>
 
 </body>
-
 </html>
