@@ -684,39 +684,9 @@ body.lb-disable-scrolling {
   opacity: 1;
 }
 
-
-
-
 #first-pargraph {
   padding: 100px;
 }
-
-/* #national-hourly-wage {
-  opacity: 50%;
-}
-
-#national-hourly-wage > div {
-  opacity: 100%;
-} */
-
-/* h1 {
-  font-weight: 3000;
-  padding-bottom: 20px;
-    font-size: 60px;
-    color: #fff;
-} */
-
-/* p {
-
-  padding: 10px;
-  font-size: 2em;
-  margin-top: 10px;
-  margin-left: 20%;
-  margin-right: 20%;
-  margin-bottom: 50px;
-  line-height: 1.6;
-} */
-
 
 p {
   padding: 50px;
