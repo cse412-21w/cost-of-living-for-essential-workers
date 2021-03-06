@@ -146,7 +146,7 @@ a:hover { color: #FF0; }
 .baner-content {
   padding-top: 30vh;
   text-align: center;
-  background-image: url(dishes.jpeg);
+  background-image: url(people.png);
 }
 
 .baner-content h1 {
@@ -742,4 +742,9 @@ li {
 ol, ul {
   margin-top: 50px;
   margin-bottom: 50px;
+}
+
+#title {
+  font-size: 1.5em;
+  font-weight: 2000;
 }

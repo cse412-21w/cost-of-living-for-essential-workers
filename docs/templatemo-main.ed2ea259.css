@@ -146,7 +146,7 @@ a:hover { color: #FF0; }
 .baner-content {
   padding-top: 30vh;
   text-align: center;
-  background-image: url(https://cse412-21w.github.io/cost-of-living-for-essential-workers/dishes.0a7106ef.jpeg);
+  background-image: url(https://cse412-21w.github.io/cost-of-living-for-essential-workers/people.3483f659.png);
 }
 
 .baner-content h1 {
@@ -744,4 +744,9 @@ ol, ul {
   margin-bottom: 50px;
 }
 
-/*# sourceMappingURL=https://cse412-21w.github.io/cost-of-living-for-essential-workers/templatemo-main.a0952313.css.map */
+#title {
+  font-size: 1.5em;
+  font-weight: 2000;
+}
+
+/*# sourceMappingURL=https://cse412-21w.github.io/cost-of-living-for-essential-workers/templatemo-main.ed2ea259.css.map */
