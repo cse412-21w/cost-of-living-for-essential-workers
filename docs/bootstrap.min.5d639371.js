@@ -15769,4 +15769,4 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
   });
 });
 },{"popper.js":"loUd","jquery":"juYr"}]},{},["fMFG"], null)
-//# sourceMappingURL=https://cse412-21w.github.io/project-demo/bootstrap.min.27ac5161.js.map
+//# sourceMappingURL=https://cse412-21w.github.io/cost-of-living-for-essential-workers/bootstrap.min.5d639371.js.map

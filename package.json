@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel src/index.html",
-    "build": "parcel build src/index.html --no-minify --public-url https://cse412-21w.github.io/project-demo & RD /S /Q .\\docs & ren .\\dist docs"
+    "build": "parcel build src/index.html --no-minify --public-url https://cse412-21w.github.io/cost-of-living-for-essential-workers/; rm -rf docs; mv dist docs;"
   },
   "repository": {
     "type": "git",

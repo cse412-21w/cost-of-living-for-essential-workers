@@ -892,4 +892,4 @@ window.Modernizr = function (a, b, c) {
   }
 }(this);
 },{}]},{},["ftHy"], null)
-//# sourceMappingURL=https://cse412-21w.github.io/project-demo/modernizr-2.8.3-respond-1.4.2.min.f68e99f6.js.map
+//# sourceMappingURL=https://cse412-21w.github.io/cost-of-living-for-essential-workers/modernizr-2.8.3-respond-1.4.2.min.a26ff41f.js.map

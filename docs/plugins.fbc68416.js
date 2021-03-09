@@ -13370,4 +13370,4 @@ if (typeof Object.create !== "function") {
   };
 })(jQuery, window, document);
 },{"jquery":"juYr"}]},{},["yKV9"], null)
-//# sourceMappingURL=https://cse412-21w.github.io/project-demo/plugins.fbc68416.js.map
+//# sourceMappingURL=https://cse412-21w.github.io/cost-of-living-for-essential-workers/plugins.fbc68416.js.map
