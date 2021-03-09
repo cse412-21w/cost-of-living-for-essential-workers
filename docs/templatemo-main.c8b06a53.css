@@ -16,8 +16,8 @@ section {
   background: #fff;
 }
 
-body { 
-  position: relative; /* we need this for the scrollspy */ 
+body {
+  position: relative; /* we need this for the scrollspy */
   font-size: 14px;
 }
 
@@ -420,7 +420,7 @@ footer em {
 }
 
 @media (max-width: 767px){
-  
+
   .baner-content {
     padding-top: 30vh;
   }
@@ -582,7 +582,7 @@ body.lb-disable-scrolling {
   width: 34%;
   left: 0;
   float: left;
-  
+
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
   -webkit-transition: opacity 0.6s;
@@ -689,11 +689,13 @@ body.lb-disable-scrolling {
 }
 
 p {
-  padding: 50px;
-  font-size: 2em;
-  margin-top: 10px;
+  font-size: 1em;
+  padding: 10px;
+  padding-right: 50px;
+  padding-left: 50px;
+  margin-top: 50px;
   margin-left: 0%;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
   line-height: 1.6;
   width: 100%;
 }
@@ -711,7 +713,7 @@ position: relative;
 h2 {
   font-weight: 3000;
   padding-bottom: 20px;
-    font-size: 3em;
+    font-size: 2.5em;
     color: black;
     margin-left: 0%;
 }
@@ -726,8 +728,8 @@ h3 {
 
 #intro p {
   padding: 80px;
-  font-size: 2em;
-  margin-top: 100px;
+  font-size: 1.5em;
+  margin-top: 60px;
   margin-left: 0%;
   margin-bottom: 10px;
   line-height: 1.6;
@@ -735,8 +737,9 @@ h3 {
 }
 
 li {
-  font-size: 2em;
+  font-size: 1em;
   margin-bottom: 10px;
+  padding-right: 50px;
 }
 
 ol, ul {

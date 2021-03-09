@@ -176,4 +176,4 @@ jQuery(document).ready(function ($) {
   });
 });
 },{}]},{},["d6sW"], null)
-//# sourceMappingURL=https://cse412-21w.github.io/cost-of-living-for-essential-workers/main.195294e5.js.map
+//# sourceMappingURL=https://cse412-21w.github.io/project-demo/main.195294e5.js.map
