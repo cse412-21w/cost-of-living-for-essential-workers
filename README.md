@@ -1,33 +1,30 @@
-# Final Project Demo
+# Final Project
+Website URL:
 https://cse412-21w.github.io/cost-of-living-for-essential-workers/
-## Team Members
-Full name: Ellen Zhu
-Uw email: czhu22@uw.edu
+## Team Members and Contribution
+Ellen Zhu (czhu22@uw.edu)
 
-Full name: Xuling Yang
-Uw email: xuliny@uw.edu
+Xuling Yang (xuliny@uw.edu)
+- The "about us" section; summarizes the project mission and design rationale; demo video editor
 
-Full name: Grant Yang 
-Uw email: ley5@uw.edu
+Grant Yang (ley5@uw.edu)
+- Github repository management; website' front-end construction and media (HTML, CSS, JS); demo video; video scripts
 
-Full name: Jueyao Liu
-UW email: jueyao99@uw.edu
+Jueyao Liu (jueyao99@uw.edu)
 
-Fullname: Tingting Yang
-UW email: tingty@uw.edu
+Tingting Yang (tingty@uw.edu)
 
-### Contribution Statements
-Add individual contribution statements here.
+
 ## Project Proposal Abstract
-As the pandemic has shown, many workers essential to the functioning of cities are also some of our lowest paid. This interactive visualization design project intends to demonstrate how difficult it is to live as an essential worker in major U.S. cities to build a case for increasing the minimum wage. We will investigate the cost of living of select U.S. cities and compare them with the incomes these workers receive. The groups of interest include both the essential workers who generally receive minimum wage (e.g. restaurant workers, delivery drivers, etc.) and others who are paid higher than minimum wage (e.g. teachers, mail carriers, bus drivers, etc.). We would like to break down the cost of living through different measures such as housing prices or the Cost of Living Index to provide an overview of cities across the country. Also, we want to investigate how many hours an individual would have to work at those low-end wages to live a decent life in those cities either as a single person or as a parent supporting their families. If possible, we would also like to make comparisons highlighting the impacts of pandemic on the targeting community.  
+As the pandemic has shown, many workers essential to the functioning of cities are also some of our lowest paid. This interactive visualization design project intends to demonstrate how difficult it is to live as an essential worker in major U.S. cities to build a case for increasing the minimum wage. We will investigate the cost of living of select U.S. cities and compare them with the incomes these workers receive. The groups of interest include both the essential workers who generally receive minimum wage (e.g. restaurant workers, delivery drivers, etc.) and others who are paid higher than minimum wage (e.g. teachers, mail carriers, bus drivers, etc.). We would like to break down the cost of living through different measures such as housing prices or the Cost of Living Index to provide an overview of cities across the country. Also, we want to investigate how many hours an individual would have to work at those low-end wages to live a decent life in those cities either as a single person or as a parent supporting their families. If possible, we would also like to make comparisons highlighting the impacts of pandemic on the targeting community.
 
-Through proper If possible, we would also like to make comparisons highlighting the impact of the pandemic on essential workers. 
+Through proper If possible, we would also like to make comparisons highlighting the impact of the pandemic on essential workers.
 
 
 ## Getting Started
 
 This repo is set up to use the [Parcel](https://parceljs.org/) bundler. If you don't
-like the way we've set things up, feel free to change it however you like! You are welcome to add, delete, rename, and replace any files contained here. You may also style and organize your final webpage however you would like. 
+like the way we've set things up, feel free to change it however you like! You are welcome to add, delete, rename, and replace any files contained here. You may also style and organize your final webpage however you would like.
 
 The only restriction is that __your final HTML/CSS/JS output must be stored in the "docs" folder__ so that
 GitHub knows how to serve it as a static site.
@@ -62,12 +59,12 @@ To run the project locally, run `npm start` and it will be available at http://l
 ### Building the final output
 
 Run `npm run build` and all of your assets will be compiled and placed into the `docs/` folder. Note
-that this command will overwrite the existing docs folder. You do not have to manually create the `docs/` folder because everything will be handled in the build script. Parcel will bundle all assets in the `src/` folder and place then in a folder called `dist/`. GitHub Pages requires the folder name to be called `docs/`, so we move all assets from the `dist/` folder to the `docs/` folder for you. 
+that this command will overwrite the existing docs folder. You do not have to manually create the `docs/` folder because everything will be handled in the build script. Parcel will bundle all assets in the `src/` folder and place then in a folder called `dist/`. GitHub Pages requires the folder name to be called `docs/`, so we move all assets from the `dist/` folder to the `docs/` folder for you.
 
 If you are developing on a Windows machine, replace the `build` script in the `package.json` file with this:
 `parcel build src/index.html --no-minify --public-url https://cse412-21w.github.io/project-demo & RD /S /Q .\\docs & ren .\\dist docs`
 
-Once pushed to GitHub, the output should be available at cse412-21w.github.io/your-repo-name/. 
+Once pushed to GitHub, the output should be available at cse412-21w.github.io/your-repo-name/.
 For example, you can view the sample embedded Tableau, vega-lite, and d3 charts at https://cse412-21w.github.io/project-demo/.
 
 
