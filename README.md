@@ -11,6 +11,7 @@ Grant Yang (ley5@uw.edu)
 - Github repository management; website' front-end construction and media (HTML, CSS, JS); demo video; video scripts
 
 Jueyao Liu (jueyao99@uw.edu)
+- Cost of Living Index and Adjusted Poverty Level sections, demo video voiceover
 
 Tingting Yang (tingty@uw.edu)
 
