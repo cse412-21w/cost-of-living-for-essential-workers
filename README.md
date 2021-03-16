@@ -1,4 +1,4 @@
-# Final Project
+# Cost Of Living for US Essential Workers
 Website URL:
 https://cse412-21w.github.io/cost-of-living-for-essential-workers/
 ## Team Members and Contribution
