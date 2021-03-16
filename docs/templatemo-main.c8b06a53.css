@@ -726,7 +726,7 @@ h3 {
 }
 
 
-#intro p {
+#intro p, .transitP {
   padding: 80px;
   font-size: 1.5em;
   margin-top: 60px;
