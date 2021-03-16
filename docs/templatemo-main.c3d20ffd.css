@@ -18,7 +18,7 @@ section {
 
 body {
   position: relative; /* we need this for the scrollspy */
-  font-size: 14px;
+  font-size: 18px;
 }
 
 a { color: #3CC; }
@@ -44,9 +44,10 @@ a:hover { color: #FF0; }
   background: transparent;
 }
 .fixed-side-navbar:hover .nav > li > a > span {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.527);
   display: block;
-  background-color: #fff;
+  background-color: rgba(241, 177, 117, 0.897);
+  font-weight: bold;
   text-align: center;
   text-transform: uppercase;
   font-size: 12px;
@@ -70,7 +71,7 @@ a:hover { color: #FF0; }
   width: 16px;
   height: 16px;
   background: transparent;
-  border: 2px solid #fff;
+  border: 2px solid rgba(236, 119, 10, 0.897);
   border-radius: 10px;
 }
 .nav>li {
@@ -78,7 +79,7 @@ a:hover { color: #FF0; }
   display: block;
 }
 .fixed-side-navbar .nav > li a {
-  color: #fff;
+  color: rgba(236, 119, 10, 0.897);
   min-height: 32px;
   background: transparent;
   padding: 5px 45px 5px 25px;
@@ -98,7 +99,7 @@ a:hover { color: #FF0; }
   width: 10px;
   height: 10px;
   border-radius: 10px;
-  background: rgba(250, 250, 250, 0.75);
+  background: rgba(236, 119, 10, 0.897);
   -webkit-transition: all .3s;
   transition: all .3s;
   -webkit-transform: scale(0.6);
@@ -752,4 +753,4 @@ ol, ul {
   font-weight: 2000;
 }
 
-/*# sourceMappingURL=https://cse412-21w.github.io/cost-of-living-for-essential-workers/templatemo-main.a0dda986.css.map */
+/*# sourceMappingURL=https://cse412-21w.github.io/cost-of-living-for-essential-workers/templatemo-main.c3d20ffd.css.map */
