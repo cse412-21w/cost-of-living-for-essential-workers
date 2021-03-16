@@ -3,7 +3,7 @@ Website URL:
 https://cse412-21w.github.io/cost-of-living-for-essential-workers/
 ## Team Members and Contribution
 Ellen Zhu (czhu22@uw.edu)
-- The introduction story and 'Average Hourly Income Per Capita' section; demo video editor
+- The introduction story, 'Average Hourly Income Per Capita' and 'Insight' sections; demo video editor
 
 Xuling Yang (xuliny@uw.edu)
 - The "about us" section; summarizes the project mission and design rationale; demo video editor
